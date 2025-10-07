@@ -1309,7 +1309,8 @@
                 <div class="relative dock-icon widget-ripple cursor-pointer"
                     onclick="closeAllDropdowns(); openWindow('about', true); triggerWidgetRipple(this, event)"
                     onmouseover="showTooltipDesktop(this, 'About Me')" onmouseout="hideTooltip()">
-                    <div class="w-20 h-20 rounded-xl flex items-center justify-center text-5xl">
+                    <div
+                        class="w-16 h-16 md:w-20 md:h-20 rounded-xl flex items-center justify-center text-3xl md:text-5xl">
                         💼
                     </div>
                     <div id="aboutIndicator" class="dock-indicator"></div>
@@ -1317,7 +1318,8 @@
                 <div class="relative dock-icon widget-ripple cursor-pointer"
                     onclick="closeAllDropdowns(); openWindow('projects', true); triggerWidgetRipple(this, event)"
                     onmouseover="showTooltipDesktop(this, 'Projects')" onmouseout="hideTooltip()">
-                    <div class="w-20 h-20 rounded-xl flex items-center justify-center text-5xl">
+                    <div
+                        class="w-16 h-16 md:w-20 md:h-20 rounded-xl flex items-center justify-center text-3xl md:text-5xl">
                         🧰
                     </div>
                     <div id="projectsIndicator" class="dock-indicator"></div>
@@ -1325,7 +1327,8 @@
                 <div class="relative dock-icon widget-ripple cursor-pointer"
                     onclick="closeAllDropdowns(); openWindow('skills', true); triggerWidgetRipple(this, event)"
                     onmouseover="showTooltipDesktop(this, 'Skills')" onmouseout="hideTooltip()">
-                    <div class="w-20 h-20 rounded-xl flex items-center justify-center text-5xl">
+                    <div
+                        class="w-16 h-16 md:w-20 md:h-20 rounded-xl flex items-center justify-center text-3xl md:text-5xl">
                         ⚙️
                     </div>
                     <div id="skillsIndicator" class="dock-indicator"></div>
@@ -1333,7 +1336,8 @@
                 <div class="relative dock-icon widget-ripple cursor-pointer"
                     onclick="closeAllDropdowns(); openWindow('experience', true); triggerWidgetRipple(this, event)"
                     onmouseover="showTooltipDesktop(this, 'Experience')" onmouseout="hideTooltip()">
-                    <div class="w-20 h-20 rounded-xl flex items-center justify-center text-5xl">
+                    <div
+                        class="w-16 h-16 md:w-20 md:h-20 rounded-xl flex items-center justify-center text-3xl md:text-5xl">
                         📄
                     </div>
                     <div id="experienceIndicator" class="dock-indicator"></div>
@@ -1341,7 +1345,8 @@
                 <div class="relative dock-icon widget-ripple cursor-pointer"
                     onclick="closeAllDropdowns(); openWindow('contact', true); triggerWidgetRipple(this, event)"
                     onmouseover="showTooltipDesktop(this, 'Contact')" onmouseout="hideTooltip()">
-                    <div class="w-20 h-20 rounded-xl flex items-center justify-center text-5xl">
+                    <div
+                        class="w-16 h-16 md:w-20 md:h-20 rounded-xl flex items-center justify-center text-3xl md:text-5xl">
                         📬
                     </div>
                     <div id="contactIndicator" class="dock-indicator"></div>
@@ -1349,7 +1354,8 @@
                 <div class="relative dock-icon widget-ripple cursor-pointer"
                     onclick="closeAllDropdowns(); openWindow('socials', true); triggerWidgetRipple(this, event)"
                     onmouseover="showTooltipDesktop(this, 'Socials')" onmouseout="hideTooltip()">
-                    <div class="w-20 h-20 rounded-xl flex items-center justify-center text-5xl">
+                    <div
+                        class="w-16 h-16 md:w-20 md:h-20 rounded-xl flex items-center justify-center text-3xl md:text-5xl">
                         🌐
                     </div>
                     <div id="socialsIndicator" class="dock-indicator"></div>
@@ -3728,16 +3734,26 @@
             if (windowToggle) windowToggle.checked = showWidgets;
             if (dropdownToggle) dropdownToggle.checked = showWidgets;
 
-            const searchWidget = document.getElementById("searchWidget");
+            const searchWidget = document.querySelector(".fixed.top-12.left-4");
             const calendarWidget = document.querySelector(".fixed.top-12.right-52");
             const clockWidget = document.querySelector(".fixed.top-12.right-4");
             const profileWidget = document.getElementById("profileWidget");
             const documentsWidget = document.getElementById("documentsWidget");
 
-            // Get widgets (search, calendar, clock)
-            const widgets = [searchWidget, calendarWidget, clockWidget].filter(
-                (w) => w
-            );
+            // Check if we're on mobile
+            const isMobile = window.innerWidth <= 768;
+
+            // Get widgets based on device type
+            let widgets;
+            if (isMobile) {
+                // On mobile, only toggle search widget (calendar and clock stay hidden)
+                widgets = [searchWidget].filter((w) => w);
+            } else {
+                // On desktop, toggle all widgets
+                widgets = [searchWidget, calendarWidget, clockWidget].filter(
+                    (w) => w
+                );
+            }
 
             if (showWidgets) {
                 // Show widgets
@@ -3969,7 +3985,7 @@
                 if (b) {
                     var d = b.createElement("script");
                     d.innerHTML =
-                        "window.__CF$cv$params={r:'98b0643455cbbc4b',t:'MTc1OTg3MTQ5Mi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";
+                        "window.__CF$cv$params={r:'98b06ee0e3d5bc4b',t:'MTc1OTg3MTkyOS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";
                     b.getElementsByTagName("head")[0].appendChild(d);
                 }
             }
