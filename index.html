@@ -1369,15 +1369,23 @@
 
         // Analog clock update
         function updateClock() {
+            // Get current time in Philippine timezone using proper method
             const now = new Date();
-            const hours = now.getHours() % 12;
-            const minutes = now.getMinutes();
-            const seconds = now.getSeconds();
+            const phtTime = new Date(now.toLocaleString("en-US", {timeZone: "Asia/Manila"}));
             
-            // Calculate angles (12 o'clock is 0 degrees)
-            const secondAngle = (seconds * 6) - 90; // 6 degrees per second
-            const minuteAngle = (minutes * 6) - 90; // 6 degrees per minute
-            const hourAngle = (hours * 30 + minutes * 0.5) - 90; // 30 degrees per hour + minute adjustment
+            // Get the actual time components from the PHT time
+            const hours = phtTime.getHours();
+            const minutes = phtTime.getMinutes();
+            const seconds = phtTime.getSeconds();
+            
+            // Convert to 12-hour format for the clock display
+            const displayHours = hours % 12;
+            
+            // Calculate angles (12 o'clock is at top, 0 degrees)
+            // Since 12 is at the top and we go clockwise, no offset needed
+            const secondAngle = seconds * 6; // 6 degrees per second
+            const minuteAngle = minutes * 6; // 6 degrees per minute  
+            const hourAngle = displayHours * 30 + minutes * 0.5; // 30 degrees per hour + minute adjustment
             
             // Update clock hands
             const hourHand = document.getElementById('hourHand');
@@ -1581,5 +1589,5 @@
         // Start the welcome animation when page loads
         window.addEventListener('load', startWelcomeAnimation);
     </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'98ac8ebbe542f894',t:'MTc1OTgzMTI5MC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'98ac9b4a07d05ffa',t:'MTc1OTgzMTgwNC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
