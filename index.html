@@ -48,7 +48,7 @@
         
         .dock {
             backdrop-filter: blur(20px);
-            background: rgba(255, 255, 255, 0.1);
+            background: transparent;
             border: 1px solid rgba(255, 255, 255, 0.2);
         }
         
@@ -121,9 +121,9 @@
         
         .dropdown {
             backdrop-filter: blur(20px);
-            background: rgba(0, 0, 0, 0.9);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
         }
         
         .loading-text {
@@ -186,19 +186,19 @@
         </div>
 
         <!-- Profile Dropdown -->
-        <div id="profileDropdown" class="dropdown fixed top-12 left-4 w-48 rounded-lg p-2 hidden z-50 text-white">
+        <div id="profileDropdown" class="dropdown fixed top-8 left-4 w-36 rounded-lg p-1 hidden z-50 text-gray-800 text-xs">
             <div>
-                <button class="w-full text-left px-3 py-2 hover:bg-white hover:bg-opacity-10 rounded" onclick="openWindow('about')">About Me</button>
-                <div class="h-px bg-white bg-opacity-20 my-1"></div>
-                <button class="w-full text-left px-3 py-2 hover:bg-white hover:bg-opacity-10 rounded" onclick="openWindow('projects')">Projects</button>
-                <div class="h-px bg-white bg-opacity-20 my-1"></div>
-                <button class="w-full text-left px-3 py-2 hover:bg-white hover:bg-opacity-10 rounded" onclick="openWindow('skills')">Skills</button>
-                <div class="h-px bg-white bg-opacity-20 my-1"></div>
-                <button class="w-full text-left px-3 py-2 hover:bg-white hover:bg-opacity-10 rounded" onclick="openWindow('experience')">Experience</button>
-                <div class="h-px bg-white bg-opacity-20 my-1"></div>
-                <button class="w-full text-left px-3 py-2 hover:bg-white hover:bg-opacity-10 rounded" onclick="openWindow('contact')">Contact</button>
-                <div class="h-px bg-white bg-opacity-20 my-1"></div>
-                <button class="w-full text-left px-3 py-2 hover:bg-white hover:bg-opacity-10 rounded" onclick="openWindow('socials')">Socials</button>
+                <button class="w-full text-left px-2 py-1 hover:bg-gray-100 hover:bg-opacity-80 rounded" onclick="openWindow('about')">About Me</button>
+                <div class="h-px bg-gray-300 bg-opacity-50 my-0.5"></div>
+                <button class="w-full text-left px-2 py-1 hover:bg-gray-100 hover:bg-opacity-80 rounded" onclick="openWindow('projects')">Projects</button>
+                <div class="h-px bg-gray-300 bg-opacity-50 my-0.5"></div>
+                <button class="w-full text-left px-2 py-1 hover:bg-gray-100 hover:bg-opacity-80 rounded" onclick="openWindow('skills')">Skills</button>
+                <div class="h-px bg-gray-300 bg-opacity-50 my-0.5"></div>
+                <button class="w-full text-left px-2 py-1 hover:bg-gray-100 hover:bg-opacity-80 rounded" onclick="openWindow('experience')">Experience</button>
+                <div class="h-px bg-gray-300 bg-opacity-50 my-0.5"></div>
+                <button class="w-full text-left px-2 py-1 hover:bg-gray-100 hover:bg-opacity-80 rounded" onclick="openWindow('contact')">Contact</button>
+                <div class="h-px bg-gray-300 bg-opacity-50 my-0.5"></div>
+                <button class="w-full text-left px-2 py-1 hover:bg-gray-100 hover:bg-opacity-80 rounded" onclick="openWindow('socials')">Socials</button>
             </div>
         </div>
 
@@ -1580,5 +1580,5 @@
         // Start the welcome animation when page loads
         window.addEventListener('load', startWelcomeAnimation);
     </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'98ac22c765da5ffa',t:'MTc1OTgyNjg2OC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'98ac83a06089f894',t:'MTc1OTgzMDgzNS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
