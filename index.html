@@ -114,9 +114,10 @@
         }
         
         .menubar {
-            backdrop-filter: blur(20px);
-            background: rgba(0, 0, 0, 0.9);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(40px);
+            background: rgba(255, 255, 255, 0.85);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+            box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
         }
         
         .dropdown {
@@ -161,9 +162,9 @@
     <!-- Main Page -->
     <div id="mainPage" class="fixed inset-0 hidden" style="background-image: url('./assets/images/window-xp_background.jpg'); background-size: cover; background-position: center;">
         <!-- Menu Bar -->
-        <div class="menubar fixed top-0 left-0 right-0 h-8 flex items-center justify-between px-4 text-white text-sm z-50">
+        <div class="menubar fixed top-0 left-0 right-0 h-8 flex items-center justify-between px-4 text-gray-800 text-sm z-50">
             <div class="flex items-center space-x-3">
-                <button id="profileMenuBtn" class="hover:bg-white hover:bg-opacity-20 p-1 rounded">
+                <button id="profileMenuBtn" class="hover:bg-gray-200 hover:bg-opacity-50 p-1 rounded">
                     <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                         <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"/>
                     </svg>
@@ -1580,5 +1581,5 @@
         // Start the welcome animation when page loads
         window.addEventListener('load', startWelcomeAnimation);
     </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'98ac83a06089f894',t:'MTc1OTgzMDgzNS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'98ac8ebbe542f894',t:'MTc1OTgzMTI5MC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
