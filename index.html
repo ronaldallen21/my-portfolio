@@ -1214,7 +1214,7 @@
         <!-- Profile Widget -->
         <div id="profileWidget"
             class="fixed top-28 left-4 rounded-xl p-4 cursor-pointer z-30 w-80 bg-white border border-gray-200 shadow-lg widget-ripple"
-            onclick="closeAllDropdowns(); openWindow('about', true); triggerWidgetRipple(this, event)">
+            onclick="closeAllDropdowns(); openWindow('about', false); triggerWidgetRipple(this, event)">
             <div class="space-y-3 relative z-10">
                 <div class="flex items-start space-x-4">
                     <div class="w-16 h-16 rounded-lg border border-gray-300 p-1 flex-shrink-0">
@@ -1258,8 +1258,7 @@
         <div id="documentsWidget" class="fixed left-4 z-30 transition-all duration-300 widget-ripple"
             style="top: 300px">
             <div class="flex flex-col items-center cursor-pointer relative z-10"
-                onclick="closeAllDropdowns(); openWindow('documents', true); triggerWidgetRipple(this.parentElement, event)"
-                onmouseover="showTooltipDesktop(this, 'Documents')" onmouseout="hideTooltip()">
+                onclick="closeAllDropdowns(); openWindow('documents', true); triggerWidgetRipple(this.parentElement, event)">
                 <div class="w-16 h-16 mb-1 rounded-xl overflow-hidden">
                     <!-- Closed Folder Icon -->
                     <svg id="folderClosedIcon" viewBox="0 0 64 64" class="w-full h-full">
@@ -3970,7 +3969,7 @@
                 if (b) {
                     var d = b.createElement("script");
                     d.innerHTML =
-                        "window.__CF$cv$params={r:'98b05bba230bbc4b',t:'MTc1OTg3MTE0NC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";
+                        "window.__CF$cv$params={r:'98b0643455cbbc4b',t:'MTc1OTg3MTQ5Mi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";
                     b.getElementsByTagName("head")[0].appendChild(d);
                 }
             }
