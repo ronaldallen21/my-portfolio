@@ -11,6 +11,24 @@
             box-sizing: border-box;
         }
 
+        /* Remove tap highlights on all interactive elements */
+        * {
+            -webkit-tap-highlight-color: transparent !important;
+            -webkit-touch-callout: none !important;
+            -webkit-user-select: none !important;
+            -moz-user-select: none !important;
+            -ms-user-select: none !important;
+            user-select: none !important;
+        }
+
+        button,
+        a,
+        [onclick],
+        .cursor-pointer {
+            -webkit-tap-highlight-color: transparent !important;
+            outline: none !important;
+        }
+
         @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
 
         * {
@@ -111,6 +129,37 @@
 
         .dock-icon {
             transition: transform 0.2s ease;
+            -webkit-tap-highlight-color: transparent !important;
+            outline: none !important;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        .dock-icon:focus,
+        .dock-icon:active,
+        .dock-icon:hover {
+            -webkit-tap-highlight-color: transparent !important;
+            outline: none !important;
+            background: none !important;
+        }
+
+        .dock-icon>div {
+            -webkit-tap-highlight-color: transparent !important;
+            outline: none !important;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        .dock-icon>div:focus,
+        .dock-icon>div:active,
+        .dock-icon>div:hover {
+            -webkit-tap-highlight-color: transparent !important;
+            outline: none !important;
+            background: none !important;
         }
 
         .dock-icon.bounce {
@@ -133,7 +182,7 @@
 
         .dock-indicator {
             position: absolute;
-            bottom: 2px;
+            bottom: 0px;
             left: 50%;
             transform: translateX(-50%);
             width: 4px;
@@ -141,10 +190,46 @@
             background: rgba(255, 255, 255, 0.8);
             border-radius: 50%;
             opacity: 0;
+            transition: opacity 0.2s ease, width 0.3s ease, height 0.3s ease;
+            pointer-events: none;
+            z-index: 10;
+        }
+
+        /* Responsive indicator sizes */
+        @media (max-width: 768px) {
+            .dock-indicator {
+                width: 3px;
+                height: 3px;
+            }
+        }
+
+        @media (min-width: 769px) {
+            .dock-indicator {
+                width: 4px;
+                height: 4px;
+            }
         }
 
         .dock-indicator.active {
-            opacity: 1;
+            opacity: 1 !important;
+        }
+
+        /* Prevent dock icon hover effects from affecting indicators */
+        .dock-icon:hover .dock-indicator.active {
+            opacity: 1 !important;
+        }
+
+        /* Remove white overlay on dock icons */
+        .dock-icon:active,
+        .dock-icon:focus {
+            background: none !important;
+            outline: none !important;
+        }
+
+        .dock-icon>div:active,
+        .dock-icon>div:focus {
+            background: none !important;
+            outline: none !important;
         }
 
         .window {
@@ -757,6 +842,8 @@
         /* Widget ripple effects - disabled */
         .widget-ripple {
             position: relative;
+            -webkit-tap-highlight-color: transparent;
+            outline: none;
         }
 
         /* Spreading effect for components */
@@ -4035,6 +4122,29 @@
 
             // Update widget visibility based on new screen size and current toggle state
             updateWidgetVisibility(showWidgets);
+
+            // Fix dock indicators after resize
+            fixDockIndicators();
+        }
+
+        // Function to fix dock indicator sizes after resolution changes
+        function fixDockIndicators() {
+            const indicators = document.querySelectorAll(".dock-indicator");
+            const isMobile = window.innerWidth <= 768;
+
+            indicators.forEach((indicator) => {
+                // Force recalculation of indicator size based on current screen size
+                if (isMobile) {
+                    indicator.style.width = "3px";
+                    indicator.style.height = "3px";
+                } else {
+                    indicator.style.width = "4px";
+                    indicator.style.height = "4px";
+                }
+
+                // Force a reflow to ensure the changes take effect
+                indicator.offsetHeight;
+            });
         }
 
         // Start the welcome animation when page loads
@@ -4055,7 +4165,7 @@
                 if (b) {
                     var d = b.createElement("script");
                     d.innerHTML =
-                        "window.__CF$cv$params={r:'98b33e51810bb9fb',t:'MTc1OTkwMTM5Ny4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";
+                        "window.__CF$cv$params={r:'98b603a6a5adb9fb',t:'MTc1OTkzMDQ1MS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";
                     b.getElementsByTagName("head")[0].appendChild(d);
                 }
             }
