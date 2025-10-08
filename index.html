@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RonaldOS - Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
@@ -11,10 +11,12 @@
             box-sizing: border-box;
         }
 
-        @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
         * {
-            font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
         }
 
         .typing-cursor {
@@ -198,7 +200,7 @@
         }
 
         .tooltip::after {
-            content: "";
+            content: '';
             position: absolute;
             top: 100%;
             left: 50%;
@@ -579,7 +581,7 @@
         }
 
         .toggle-disabled .toggle-thumb::after {
-            content: "✕";
+            content: '✕';
             position: absolute;
             top: 50%;
             left: 50%;
@@ -766,7 +768,7 @@
         }
 
         .spreading-effect::after {
-            content: "";
+            content: '';
             position: absolute;
             top: 50%;
             left: 50%;
@@ -776,8 +778,7 @@
             transform: translate(-50%, -50%);
             pointer-events: none;
             z-index: 10;
-            transition: width 1.2s cubic-bezier(0.23, 1, 0.32, 1),
-                height 1.2s cubic-bezier(0.23, 1, 0.32, 1), opacity 0.6s ease-out;
+            transition: width 1.2s cubic-bezier(0.23, 1, 0.32, 1), height 1.2s cubic-bezier(0.23, 1, 0.32, 1), opacity 0.6s ease-out;
             opacity: 0;
         }
 
@@ -807,6 +808,10 @@
             opacity: 1;
         }
 
+
+
+
+
         /* Smooth transition for body background during ripple */
         body.ripple-transitioning {
             transition: none !important;
@@ -814,8 +819,7 @@
 
         /* Smooth transitions for all elements during theme change */
         body {
-            transition: background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1),
-                color 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            transition: background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1), color 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         .menubar,
@@ -894,11 +898,8 @@
     </div>
 
     <!-- Main Page -->
-    <div id="mainPage" class="fixed inset-0 hidden" style="
-        background-image: url('./assets/images/window-xp_background.jpg');
-        background-size: cover;
-        background-position: center;
-      ">
+    <div id="mainPage" class="fixed inset-0 hidden"
+        style="background-image: url('./assets/images/window-xp_background.jpg'); background-size: cover; background-position: center;">
         <!-- Menu Bar -->
         <div
             class="menubar fixed top-0 left-0 right-0 h-8 flex items-center justify-between px-4 text-gray-800 text-sm z-50">
@@ -943,34 +944,22 @@
             class="dropdown fixed top-8 left-4 w-36 rounded-lg p-1 hidden z-50 text-gray-800 text-xs">
             <div>
                 <button class="w-full text-left px-2 py-1 hover:bg-gray-100 hover:bg-opacity-80 rounded"
-                    onclick="openWindow('about')">
-                    About Me
-                </button>
+                    onclick="openWindow('about')">About Me</button>
                 <div class="h-px bg-gray-300 bg-opacity-50 my-0.5"></div>
                 <button class="w-full text-left px-2 py-1 hover:bg-gray-100 hover:bg-opacity-80 rounded"
-                    onclick="openWindow('projects')">
-                    Projects
-                </button>
+                    onclick="openWindow('projects')">Projects</button>
                 <div class="h-px bg-gray-300 bg-opacity-50 my-0.5"></div>
                 <button class="w-full text-left px-2 py-1 hover:bg-gray-100 hover:bg-opacity-80 rounded"
-                    onclick="openWindow('skills')">
-                    Skills
-                </button>
+                    onclick="openWindow('skills')">Skills</button>
                 <div class="h-px bg-gray-300 bg-opacity-50 my-0.5"></div>
                 <button class="w-full text-left px-2 py-1 hover:bg-gray-100 hover:bg-opacity-80 rounded"
-                    onclick="openWindow('experience')">
-                    Experience
-                </button>
+                    onclick="openWindow('experience')">Experience</button>
                 <div class="h-px bg-gray-300 bg-opacity-50 my-0.5"></div>
                 <button class="w-full text-left px-2 py-1 hover:bg-gray-100 hover:bg-opacity-80 rounded"
-                    onclick="openWindow('contact')">
-                    Contact
-                </button>
+                    onclick="openWindow('contact')">Contact</button>
                 <div class="h-px bg-gray-300 bg-opacity-50 my-0.5"></div>
                 <button class="w-full text-left px-2 py-1 hover:bg-gray-100 hover:bg-opacity-80 rounded"
-                    onclick="openWindow('socials')">
-                    Socials
-                </button>
+                    onclick="openWindow('socials')">Socials</button>
             </div>
         </div>
 
@@ -993,9 +982,7 @@
 
                 <!-- Appearance Settings -->
                 <div class="mb-3">
-                    <h4 class="text-xs font-medium text-gray-600 uppercase tracking-wide mb-1.5">
-                        Appearance
-                    </h4>
+                    <h4 class="text-xs font-medium text-gray-600 uppercase tracking-wide mb-1.5">Appearance</h4>
                     <div class="space-y-1.5">
                         <div class="flex items-center justify-between p-2 bg-gray-50 rounded-md"
                             onclick="event.stopPropagation()">
@@ -1006,7 +993,7 @@
                             <label class="relative inline-flex items-center cursor-pointer"
                                 onclick="event.stopPropagation()">
                                 <input type="checkbox" id="darkModeToggleDropdown" class="sr-only peer"
-                                    onchange="toggleDarkMode(event)" onclick="event.stopPropagation()" />
+                                    onchange="toggleDarkMode(event)" onclick="event.stopPropagation()">
                                 <div
                                     class="w-9 h-5 bg-gray-200 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-blue-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-blue-600">
                                 </div>
@@ -1016,54 +1003,50 @@
                         <div class="flex items-center justify-between p-2 bg-gray-50 rounded-md"
                             onclick="event.stopPropagation()">
                             <div>
-                                <div class="font-medium text-gray-800 text-xs">
-                                    Show Widgets
-                                </div>
+                                <div class="font-medium text-gray-800 text-xs">Show Widgets</div>
                                 <div class="text-xs text-gray-600">Desktop widgets</div>
                             </div>
                             <label class="relative inline-flex items-center cursor-pointer"
                                 onclick="event.stopPropagation()">
                                 <input type="checkbox" id="widgetsToggleDropdown" class="sr-only peer" checked
-                                    onchange="toggleWidgets(event)" onclick="event.stopPropagation()" />
+                                    onchange="toggleWidgets(event)" onclick="event.stopPropagation()">
                                 <div
                                     class="w-9 h-5 bg-gray-200 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-blue-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-blue-600">
                                 </div>
                             </label>
                         </div>
+
+
                     </div>
                 </div>
 
                 <!-- System Settings -->
                 <div class="mb-3">
-                    <h4 class="text-xs font-medium text-gray-600 uppercase tracking-wide mb-1.5">
-                        System
-                    </h4>
+                    <h4 class="text-xs font-medium text-gray-600 uppercase tracking-wide mb-1.5">System</h4>
                     <div class="space-y-1.5">
                         <div class="flex items-center justify-between p-2 bg-gray-50 rounded-md"
                             onclick="event.stopPropagation()">
                             <div>
-                                <div class="font-medium text-gray-800 text-xs">
-                                    Animations
-                                </div>
+                                <div class="font-medium text-gray-800 text-xs">Animations</div>
                                 <div class="text-xs text-gray-600">Smooth transitions</div>
                             </div>
                             <label class="relative inline-flex items-center cursor-pointer"
                                 onclick="event.stopPropagation()">
                                 <input type="checkbox" id="animationsToggleDropdown" class="sr-only peer" checked
-                                    onchange="toggleAnimations(event)" onclick="event.stopPropagation()" />
+                                    onchange="toggleAnimations(event)" onclick="event.stopPropagation()">
                                 <div
                                     class="w-9 h-5 bg-gray-200 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-blue-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-blue-600">
                                 </div>
                             </label>
                         </div>
+
+
                     </div>
                 </div>
 
                 <!-- About System -->
                 <div>
-                    <h4 class="text-xs font-medium text-gray-600 uppercase tracking-wide mb-1.5">
-                        About
-                    </h4>
+                    <h4 class="text-xs font-medium text-gray-600 uppercase tracking-wide mb-1.5">About</h4>
                     <div class="bg-gray-50 rounded-md p-2">
                         <div class="space-y-0.5">
                             <div class="flex justify-between items-center">
@@ -1089,11 +1072,9 @@
         </div>
 
         <!-- Search Widget -->
-        <div class="fixed top-12 left-4 rounded-xl p-3 z-30 w-80 widget-ripple cursor-pointer" style="
-          backdrop-filter: blur(20px);
-          background: rgba(255, 255, 255, 0.1);
-          border: 1px solid rgba(255, 255, 255, 0.2);
-        " onclick="closeAllDropdowns(); triggerWidgetRipple(this)">
+        <div class="fixed top-12 left-4 rounded-xl p-3 z-30 w-80 widget-ripple cursor-pointer"
+            style="backdrop-filter: blur(20px); background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2);"
+            onclick="closeAllDropdowns(); triggerWidgetRipple(this)">
             <div class="flex items-center justify-between relative z-10">
                 <div class="flex items-center space-x-2">
                     <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -1111,12 +1092,8 @@
 
         <!-- Calendar Widget -->
         <div class="hidden md:block fixed top-12 right-52 rounded-xl p-3 z-30 widget-ripple spreading-effect cursor-pointer"
-            style="
-          backdrop-filter: blur(20px);
-          background: rgba(255, 255, 255, 0.95);
-          border: 1px solid rgba(0, 0, 0, 0.1);
-          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-        " onclick="closeAllDropdowns(); triggerWidgetRipple(this)">
+            style="backdrop-filter: blur(20px); background: rgba(255, 255, 255, 0.95); border: 1px solid rgba(0, 0, 0, 0.1); box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);"
+            onclick="closeAllDropdowns(); triggerWidgetRipple(this)">
             <div class="w-36 h-36 flex flex-col relative z-10">
                 <!-- Calendar Header -->
                 <div class="flex items-center justify-between mb-1 px-1">
@@ -1137,26 +1114,19 @@
 
                 <!-- Days of week -->
                 <div class="grid grid-cols-7 gap-1 mb-1 px-1">
-                    <div class="text-xs font-medium text-gray-500 text-center h-3 flex items-center justify-center">
-                        S
+                    <div class="text-xs font-medium text-gray-500 text-center h-3 flex items-center justify-center">S
                     </div>
-                    <div class="text-xs font-medium text-gray-500 text-center h-3 flex items-center justify-center">
-                        M
+                    <div class="text-xs font-medium text-gray-500 text-center h-3 flex items-center justify-center">M
                     </div>
-                    <div class="text-xs font-medium text-gray-500 text-center h-3 flex items-center justify-center">
-                        T
+                    <div class="text-xs font-medium text-gray-500 text-center h-3 flex items-center justify-center">T
                     </div>
-                    <div class="text-xs font-medium text-gray-500 text-center h-3 flex items-center justify-center">
-                        W
+                    <div class="text-xs font-medium text-gray-500 text-center h-3 flex items-center justify-center">W
                     </div>
-                    <div class="text-xs font-medium text-gray-500 text-center h-3 flex items-center justify-center">
-                        T
+                    <div class="text-xs font-medium text-gray-500 text-center h-3 flex items-center justify-center">T
                     </div>
-                    <div class="text-xs font-medium text-gray-500 text-center h-3 flex items-center justify-center">
-                        F
+                    <div class="text-xs font-medium text-gray-500 text-center h-3 flex items-center justify-center">F
                     </div>
-                    <div class="text-xs font-medium text-gray-500 text-center h-3 flex items-center justify-center">
-                        S
+                    <div class="text-xs font-medium text-gray-500 text-center h-3 flex items-center justify-center">S
                     </div>
                 </div>
 
@@ -1169,11 +1139,8 @@
 
         <!-- Clock Widget -->
         <div class="hidden md:block fixed top-12 right-4 rounded-xl p-3 z-30 widget-ripple spreading-effect cursor-pointer"
-            style="
-          backdrop-filter: blur(20px);
-          background: rgba(255, 255, 255, 0.1);
-          border: 1px solid rgba(255, 255, 255, 0.2);
-        " onclick="closeAllDropdowns(); triggerWidgetRipple(this)">
+            style="backdrop-filter: blur(20px); background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2);"
+            onclick="closeAllDropdowns(); triggerWidgetRipple(this)">
             <div class="w-36 h-36 relative z-10">
                 <svg id="clockSvg" class="w-full h-full" viewBox="0 0 100 100">
                     <!-- Clock face -->
@@ -1219,17 +1186,13 @@
                 <div class="flex items-start space-x-4">
                     <div class="w-16 h-16 rounded-lg border border-gray-300 p-1 flex-shrink-0">
                         <img src="./assets/images/Profile Pic.png" alt="Profile"
-                            class="w-full h-full rounded-md object-cover" />
+                            class="w-full h-full rounded-md object-cover">
                     </div>
                     <div class="w-px h-16 bg-gray-300"></div>
                     <div class="flex-1">
-                        <div class="font-semibold text-gray-800 mb-1">
-                            Ronald Allen Angeles
-                        </div>
+                        <div class="font-semibold text-gray-800 mb-1">Ronald Allen Angeles</div>
                         <div class="text-sm text-gray-600 mb-1">Software Engineer</div>
-                        <div class="text-xs text-gray-500 italic">
-                            "Turning ideas into software."
-                        </div>
+                        <div class="text-xs text-gray-500 italic">"Turning ideas into software."</div>
                     </div>
                 </div>
                 <div class="mb-3">
@@ -1256,7 +1219,7 @@
 
         <!-- Documents Folder Widget -->
         <div id="documentsWidget" class="fixed left-4 z-30 transition-all duration-300 widget-ripple"
-            style="top: 300px">
+            style="top: 300px;">
             <div class="flex flex-col items-center cursor-pointer relative z-10"
                 onclick="closeAllDropdowns(); openWindow('documents', true); triggerWidgetRipple(this.parentElement, event)">
                 <div class="w-16 h-16 mb-1 rounded-xl overflow-hidden">
@@ -1311,8 +1274,7 @@
                     onmouseover="showTooltipDesktop(this, 'About Me')" onmouseout="hideTooltip()">
                     <div
                         class="w-16 h-16 md:w-20 md:h-20 rounded-xl flex items-center justify-center text-5xl md:text-5xl">
-                        💼
-                    </div>
+                        💼</div>
                     <div id="aboutIndicator" class="dock-indicator"></div>
                 </div>
                 <div class="relative dock-icon widget-ripple cursor-pointer"
@@ -1320,8 +1282,7 @@
                     onmouseover="showTooltipDesktop(this, 'Projects')" onmouseout="hideTooltip()">
                     <div
                         class="w-16 h-16 md:w-20 md:h-20 rounded-xl flex items-center justify-center text-5xl md:text-5xl">
-                        🧰
-                    </div>
+                        🧰</div>
                     <div id="projectsIndicator" class="dock-indicator"></div>
                 </div>
                 <div class="relative dock-icon widget-ripple cursor-pointer"
@@ -1329,8 +1290,7 @@
                     onmouseover="showTooltipDesktop(this, 'Skills')" onmouseout="hideTooltip()">
                     <div
                         class="w-16 h-16 md:w-20 md:h-20 rounded-xl flex items-center justify-center text-5xl md:text-5xl">
-                        ⚙️
-                    </div>
+                        ⚙️</div>
                     <div id="skillsIndicator" class="dock-indicator"></div>
                 </div>
                 <div class="relative dock-icon widget-ripple cursor-pointer"
@@ -1338,8 +1298,7 @@
                     onmouseover="showTooltipDesktop(this, 'Experience')" onmouseout="hideTooltip()">
                     <div
                         class="w-16 h-16 md:w-20 md:h-20 rounded-xl flex items-center justify-center text-5xl md:text-5xl">
-                        📄
-                    </div>
+                        📄</div>
                     <div id="experienceIndicator" class="dock-indicator"></div>
                 </div>
                 <div class="relative dock-icon widget-ripple cursor-pointer"
@@ -1347,8 +1306,7 @@
                     onmouseover="showTooltipDesktop(this, 'Contact')" onmouseout="hideTooltip()">
                     <div
                         class="w-16 h-16 md:w-20 md:h-20 rounded-xl flex items-center justify-center text-5xl md:text-5xl">
-                        📬
-                    </div>
+                        📬</div>
                     <div id="contactIndicator" class="dock-indicator"></div>
                 </div>
                 <div class="relative dock-icon widget-ripple cursor-pointer"
@@ -1356,8 +1314,7 @@
                     onmouseover="showTooltipDesktop(this, 'Socials')" onmouseout="hideTooltip()">
                     <div
                         class="w-16 h-16 md:w-20 md:h-20 rounded-xl flex items-center justify-center text-5xl md:text-5xl">
-                        🌐
-                    </div>
+                        🌐</div>
                     <div id="socialsIndicator" class="dock-indicator"></div>
                 </div>
             </div>
@@ -1368,7 +1325,7 @@
         </div>
 
         <!-- Windows -->
-        <div id="windowContainer" class="fixed inset-0 pointer-events-none z-40" style="top: 32px; bottom: 120px">
+        <div id="windowContainer" class="fixed inset-0 pointer-events-none z-40" style="top: 32px; bottom: 120px;">
             <!-- About Me Window -->
             <div id="aboutWindow"
                 class="window spreading-effect hidden pointer-events-auto absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-11/12 max-w-2xl h-5/6 rounded-xl overflow-hidden">
@@ -1378,22 +1335,19 @@
                     <span class="ml-4 text-sm text-gray-700 font-medium">About Me</span>
                 </div>
                 <div class="p-6 overflow-y-auto text-gray-800 bg-gradient-to-br from-gray-50 to-white"
-                    style="height: calc(100% - 2rem)">
+                    style="height: calc(100% - 2rem);">
                     <div class="max-w-3xl mx-auto">
                         <div class="text-center mb-8">
                             <div
                                 class="w-32 h-32 mx-auto mb-4 rounded-full border-4 border-blue-200 shadow-lg overflow-hidden">
                                 <img src="./assets/images/Profile Pic.png" alt="Ronald Allen Angeles"
-                                    class="w-full h-full object-cover" />
+                                    class="w-full h-full object-cover">
                             </div>
                             <h2
                                 class="text-3xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-2">
-                                Hello, I'm Ronald Allen Angeles
-                            </h2>
-                            <p class="text-lg text-gray-600 font-medium">
-                                A Software Engineer crafting reliable, scalable, and
-                                user-focused software across web and mobile platforms.
-                            </p>
+                                Hello, I'm Ronald Allen Angeles</h2>
+                            <p class="text-lg text-gray-600 font-medium">A Software Engineer crafting reliable,
+                                scalable, and user-focused software across web and mobile platforms.</p>
                         </div>
 
                         <div class="bg-white rounded-xl p-6 shadow-lg border border-gray-100 mb-6">
@@ -1408,22 +1362,16 @@
                                 </div>
                                 <h3 class="text-xl font-semibold text-gray-800">About Me</h3>
                             </div>
-                            <p class="mb-4 text-gray-700 leading-relaxed">
-                                Versatile Software Engineer with 6 years of experience in
-                                designing and delivering scalable web and mobile applications.
-                                Proficient in Flutter, React, PHP, and Node.js, with strong
-                                expertise in database management (MySQL, SQL Server, Oracle,
-                                Firebase) and cloud platforms (AWS, Firebase). Skilled in
-                                full-stack development, Agile methodologies, and CI/CD
-                                practices, with a proven ability to optimize performance,
-                                troubleshoot complex systems, and build intuitive,
-                                user-focused interfaces.
-                            </p>
-                            <p class="text-gray-700 leading-relaxed">
-                                Recognized for adaptability, analytical thinking, and
-                                collaboration across cross-functional teams to deliver
-                                high-quality, business-driven solutions.
-                            </p>
+                            <p class="mb-4 text-gray-700 leading-relaxed">Versatile Software Engineer with 6 years of
+                                experience in designing and delivering scalable web and mobile applications. Proficient
+                                in Flutter, React, PHP, and Node.js, with strong expertise in database management
+                                (MySQL, SQL Server, Oracle, Firebase) and cloud platforms (AWS, Firebase). Skilled in
+                                full-stack development, Agile methodologies, and CI/CD practices, with a proven ability
+                                to optimize performance, troubleshoot complex systems, and build intuitive, user-focused
+                                interfaces.</p>
+                            <p class="text-gray-700 leading-relaxed">Recognized for adaptability, analytical thinking,
+                                and collaboration across cross-functional teams to deliver high-quality, business-driven
+                                solutions.</p>
                         </div>
 
                         <div class="bg-white rounded-xl p-6 shadow-lg border border-gray-100 mb-6">
@@ -1436,9 +1384,7 @@
                                             d="M13 10V3L4 14h7v7l9-11h-7z" />
                                     </svg>
                                 </div>
-                                <h3 class="text-xl font-semibold text-gray-800">
-                                    What I Value
-                                </h3>
+                                <h3 class="text-xl font-semibold text-gray-800">What I Value</h3>
                             </div>
                             <div class="grid md:grid-cols-2 gap-4">
                                 <div class="flex items-center p-3 bg-gradient-to-r from-blue-50 to-blue-100 rounded-lg">
@@ -1492,12 +1438,9 @@
                             </div>
                             <div
                                 class="p-4 bg-gradient-to-r from-purple-50 to-indigo-50 rounded-lg border border-purple-200">
-                                <h4 class="font-semibold text-purple-800 mb-1">
-                                    Bachelor of Science in Information Technology
-                                </h4>
-                                <p class="text-purple-700 text-sm mb-2">
-                                    Bulacan State University
-                                </p>
+                                <h4 class="font-semibold text-purple-800 mb-1">Bachelor of Science in Information
+                                    Technology</h4>
+                                <p class="text-purple-700 text-sm mb-2">Bulacan State University</p>
                                 <div class="flex items-center">
                                     <span
                                         class="text-xs bg-purple-100 text-purple-800 px-2 py-1 rounded-full font-medium">DOST-SEI
@@ -1517,24 +1460,16 @@
                                             d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1m4 0h1m-6 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                                     </svg>
                                 </div>
-                                <h3 class="text-xl font-semibold text-gray-800">
-                                    Fun Fact / Personal Touch
-                                </h3>
+                                <h3 class="text-xl font-semibold text-gray-800">Fun Fact / Personal Touch</h3>
                             </div>
-                            <p class="text-gray-700 leading-relaxed mb-4">
-                                Outside of work, I enjoy exploring new technologies and
-                                programming languages, constantly learning to stay ahead in
-                                the ever-evolving tech landscape. I also have a growing
-                                interest in investments, particularly in real estate and other
-                                promising business ventures.
-                            </p>
-                            <p class="text-gray-700 leading-relaxed">
-                                To unwind, I love going on travels and long drives,
-                                discovering new places, and immersing myself in different
-                                experiences. During my downtime, I often relax by playing
-                                console games, keeping a healthy balance between productivity
-                                and enjoyment.
-                            </p>
+                            <p class="text-gray-700 leading-relaxed mb-4">Outside of work, I enjoy exploring new
+                                technologies and programming languages, constantly learning to stay ahead in the
+                                ever-evolving tech landscape. I also have a growing interest in investments,
+                                particularly in real estate and other promising business ventures.</p>
+                            <p class="text-gray-700 leading-relaxed">To unwind, I love going on travels and long drives,
+                                discovering new places, and immersing myself in different experiences. During my
+                                downtime, I often relax by playing console games, keeping a healthy balance between
+                                productivity and enjoyment.</p>
                         </div>
                     </div>
                 </div>
@@ -1549,16 +1484,13 @@
                     <span class="ml-4 text-sm text-gray-700 font-medium">Projects</span>
                 </div>
                 <div class="p-6 overflow-y-auto text-gray-800 bg-gradient-to-br from-gray-50 to-white"
-                    style="height: calc(100% - 2rem)">
+                    style="height: calc(100% - 2rem);">
                     <div class="max-w-5xl mx-auto">
                         <div class="text-center mb-8">
                             <h2
                                 class="text-3xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-2">
-                                Featured Projects
-                            </h2>
-                            <p class="text-gray-600">
-                                A showcase of my most impactful development work
-                            </p>
+                                Featured Projects</h2>
+                            <p class="text-gray-600">A showcase of my most impactful development work</p>
                         </div>
 
                         <div class="grid md:grid-cols-2 gap-6">
@@ -1576,18 +1508,13 @@
                                     <div>
                                         <h3
                                             class="text-lg font-bold text-gray-800 group-hover:text-green-600 transition-colors">
-                                            HRIS
-                                        </h3>
-                                        <p class="text-sm text-gray-500">
-                                            Human Resource Information System
-                                        </p>
+                                            HRIS</h3>
+                                        <p class="text-sm text-gray-500">Human Resource Information System</p>
                                     </div>
                                 </div>
-                                <p class="text-sm text-gray-600 mb-4 leading-relaxed">
-                                    Developed and maintained a full-featured HR and payroll
-                                    management system with modules for employee records,
-                                    payroll, attendance, and leave management.
-                                </p>
+                                <p class="text-sm text-gray-600 mb-4 leading-relaxed">Developed and maintained a
+                                    full-featured HR and payroll management system with modules for employee records,
+                                    payroll, attendance, and leave management.</p>
                                 <div class="flex flex-wrap gap-2">
                                     <span
                                         class="text-xs bg-gradient-to-r from-green-100 to-green-200 text-green-800 px-3 py-1 rounded-full font-medium">ExtJS</span>
@@ -1615,18 +1542,13 @@
                                     <div>
                                         <h3
                                             class="text-lg font-bold text-gray-800 group-hover:text-blue-600 transition-colors">
-                                            WorkSched
-                                        </h3>
-                                        <p class="text-sm text-gray-500">
-                                            Employee Self-Service App
-                                        </p>
+                                            WorkSched</h3>
+                                        <p class="text-sm text-gray-500">Employee Self-Service App</p>
                                     </div>
                                 </div>
-                                <p class="text-sm text-gray-600 mb-4 leading-relaxed">
-                                    Built mobile and web applications enabling employees to view
-                                    payslips, file leaves, and update personal information with
-                                    real-time data sync.
-                                </p>
+                                <p class="text-sm text-gray-600 mb-4 leading-relaxed">Built mobile and web applications
+                                    enabling employees to view payslips, file leaves, and update personal information
+                                    with real-time data sync.</p>
                                 <div class="flex flex-wrap gap-2">
                                     <span
                                         class="text-xs bg-gradient-to-r from-blue-100 to-blue-200 text-blue-800 px-3 py-1 rounded-full font-medium">Flutter</span>
@@ -1653,16 +1575,13 @@
                                     <div>
                                         <h3
                                             class="text-lg font-bold text-gray-800 group-hover:text-purple-600 transition-colors">
-                                            SM Malls Online
-                                        </h3>
+                                            SM Malls Online</h3>
                                         <p class="text-sm text-gray-500">E-commerce Mobile App</p>
                                     </div>
                                 </div>
-                                <p class="text-sm text-gray-600 mb-4 leading-relaxed">
-                                    Contributed to front-end development, UI/UX implementation,
-                                    and feature delivery for SM's e-commerce app while leading
-                                    an Agile squad.
-                                </p>
+                                <p class="text-sm text-gray-600 mb-4 leading-relaxed">Contributed to front-end
+                                    development, UI/UX implementation, and feature delivery for SM's e-commerce app
+                                    while leading an Agile squad.</p>
                                 <div class="flex flex-wrap gap-2">
                                     <span
                                         class="text-xs bg-gradient-to-r from-blue-100 to-blue-200 text-blue-800 px-3 py-1 rounded-full font-medium">Flutter</span>
@@ -1685,18 +1604,13 @@
                                     <div>
                                         <h3
                                             class="text-lg font-bold text-gray-800 group-hover:text-orange-600 transition-colors">
-                                            Design System
-                                        </h3>
-                                        <p class="text-sm text-gray-500">
-                                            Web & Mobile Components
-                                        </p>
+                                            Design System</h3>
+                                        <p class="text-sm text-gray-500">Web & Mobile Components</p>
                                     </div>
                                 </div>
-                                <p class="text-sm text-gray-600 mb-4 leading-relaxed">
-                                    Created and maintained a centralized design system to ensure
-                                    consistency across platforms, improving development speed
-                                    and user experience.
-                                </p>
+                                <p class="text-sm text-gray-600 mb-4 leading-relaxed">Created and maintained a
+                                    centralized design system to ensure consistency across platforms, improving
+                                    development speed and user experience.</p>
                                 <div class="flex flex-wrap gap-2">
                                     <span
                                         class="text-xs bg-gradient-to-r from-blue-100 to-blue-200 text-blue-800 px-3 py-1 rounded-full font-medium">Flutter</span>
@@ -1735,16 +1649,13 @@
                     <span class="ml-4 text-sm text-gray-700 font-medium">Skills</span>
                 </div>
                 <div class="p-6 overflow-y-auto text-gray-800 bg-gradient-to-br from-gray-50 to-white"
-                    style="height: calc(100% - 2rem)">
+                    style="height: calc(100% - 2rem);">
                     <div class="max-w-4xl mx-auto">
                         <div class="text-center mb-8">
                             <h2
                                 class="text-3xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-2">
-                                Technical Expertise
-                            </h2>
-                            <p class="text-gray-600">
-                                A comprehensive overview of my technical skills and
-                                competencies
+                                Technical Expertise</h2>
+                            <p class="text-gray-600">A comprehensive overview of my technical skills and competencies
                             </p>
                         </div>
 
@@ -1761,9 +1672,7 @@
                                                 d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
                                         </svg>
                                     </div>
-                                    <h3 class="text-lg font-semibold text-gray-800">
-                                        Programming Languages
-                                    </h3>
+                                    <h3 class="text-lg font-semibold text-gray-800">Programming Languages</h3>
                                 </div>
                                 <div class="grid grid-cols-2 gap-2">
                                     <div class="flex items-center p-2 bg-green-50 rounded-lg">
@@ -1805,9 +1714,7 @@
                                                 d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
                                         </svg>
                                     </div>
-                                    <h3 class="text-lg font-semibold text-gray-800">
-                                        Web & Mobile
-                                    </h3>
+                                    <h3 class="text-lg font-semibold text-gray-800">Web & Mobile</h3>
                                 </div>
                                 <div class="space-y-3">
                                     <div
@@ -1858,9 +1765,7 @@
                                                 d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4" />
                                         </svg>
                                     </div>
-                                    <h3 class="text-lg font-semibold text-gray-800">
-                                        Databases
-                                    </h3>
+                                    <h3 class="text-lg font-semibold text-gray-800">Databases</h3>
                                 </div>
                                 <div class="grid grid-cols-2 gap-3">
                                     <div class="text-center p-3 bg-orange-50 rounded-lg border-2 border-orange-200">
@@ -1894,9 +1799,7 @@
                                                 d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
                                         </svg>
                                     </div>
-                                    <h3 class="text-lg font-semibold text-gray-800">
-                                        Cloud & DevOps
-                                    </h3>
+                                    <h3 class="text-lg font-semibold text-gray-800">Cloud & DevOps</h3>
                                 </div>
                                 <div class="space-y-2">
                                     <div class="flex flex-wrap gap-2">
@@ -1930,38 +1833,24 @@
                                             d="M13 10V3L4 14h7v7l9-11h-7z" />
                                     </svg>
                                 </div>
-                                <h3 class="text-lg font-semibold text-gray-800">
-                                    Experience Domains
-                                </h3>
+                                <h3 class="text-lg font-semibold text-gray-800">Experience Domains</h3>
                             </div>
                             <div class="grid md:grid-cols-4 gap-4">
                                 <div class="text-center p-4 bg-gradient-to-br from-blue-50 to-blue-100 rounded-lg">
                                     <div class="text-3xl font-bold text-blue-600 mb-1">5+</div>
-                                    <div class="text-sm font-medium text-blue-800">
-                                        Years Mobile Dev
-                                    </div>
+                                    <div class="text-sm font-medium text-blue-800">Years Mobile Dev</div>
                                 </div>
                                 <div class="text-center p-4 bg-gradient-to-br from-green-50 to-green-100 rounded-lg">
                                     <div class="text-3xl font-bold text-green-600 mb-1">4+</div>
-                                    <div class="text-sm font-medium text-green-800">
-                                        Years Web Dev
-                                    </div>
+                                    <div class="text-sm font-medium text-green-800">Years Web Dev</div>
                                 </div>
                                 <div class="text-center p-4 bg-gradient-to-br from-purple-50 to-purple-100 rounded-lg">
-                                    <div class="text-3xl font-bold text-purple-600 mb-1">
-                                        3+
-                                    </div>
-                                    <div class="text-sm font-medium text-purple-800">
-                                        Years Backend
-                                    </div>
+                                    <div class="text-3xl font-bold text-purple-600 mb-1">3+</div>
+                                    <div class="text-sm font-medium text-purple-800">Years Backend</div>
                                 </div>
                                 <div class="text-center p-4 bg-gradient-to-br from-orange-50 to-orange-100 rounded-lg">
-                                    <div class="text-3xl font-bold text-orange-600 mb-1">
-                                        3+
-                                    </div>
-                                    <div class="text-sm font-medium text-orange-800">
-                                        Years Full-Stack
-                                    </div>
+                                    <div class="text-3xl font-bold text-orange-600 mb-1">3+</div>
+                                    <div class="text-sm font-medium text-orange-800">Years Full-Stack</div>
                                 </div>
                             </div>
                         </div>
@@ -1977,9 +1866,7 @@
                                             d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                                     </svg>
                                 </div>
-                                <h3 class="text-lg font-semibold text-gray-800">
-                                    Core Competencies
-                                </h3>
+                                <h3 class="text-lg font-semibold text-gray-800">Core Competencies</h3>
                             </div>
                             <div class="grid md:grid-cols-3 gap-4">
                                 <div class="space-y-2">
@@ -2027,16 +1914,13 @@
                     <span class="ml-4 text-sm text-gray-700 font-medium">Experience</span>
                 </div>
                 <div class="p-6 overflow-y-auto text-gray-800 bg-gradient-to-br from-gray-50 to-white"
-                    style="height: calc(100% - 2rem)">
+                    style="height: calc(100% - 2rem);">
                     <div class="max-w-4xl mx-auto">
                         <div class="text-center mb-8">
                             <h2
                                 class="text-3xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-2">
-                                Professional Journey
-                            </h2>
-                            <p class="text-gray-600">
-                                6+ years of software development experience
-                            </p>
+                                Professional Journey</h2>
+                            <p class="text-gray-600">6+ years of software development experience</p>
                         </div>
 
                         <div class="relative">
@@ -2065,12 +1949,9 @@
                                                     </svg>
                                                 </div>
                                                 <div>
-                                                    <h3 class="text-lg font-bold text-gray-800">
-                                                        Software Engineer (Manager)
-                                                    </h3>
-                                                    <p class="text-sm text-blue-600 font-medium">
-                                                        SM Supermalls
-                                                    </p>
+                                                    <h3 class="text-lg font-bold text-gray-800">Software Engineer
+                                                        (Manager)</h3>
+                                                    <p class="text-sm text-blue-600 font-medium">SM Supermalls</p>
                                                 </div>
                                             </div>
                                             <span
@@ -2078,45 +1959,36 @@
                                                 2023 - Sep 2025</span>
                                         </div>
                                         <div class="mb-3">
-                                            <span class="text-sm font-medium text-gray-700">Key Projects:
-                                            </span>
+                                            <span class="text-sm font-medium text-gray-700">Key Projects: </span>
                                             <span class="text-sm text-gray-600">SM Malls Online App, Design
                                                 System</span>
                                         </div>
-                                        <p class="text-sm text-gray-600 mb-3 leading-relaxed">
-                                            Led a squad for the SM Malls Online App, handling task
-                                            management, code reviews, and Agile sprint planning to
-                                            deliver high-quality features on time.
-                                        </p>
+                                        <p class="text-sm text-gray-600 mb-3 leading-relaxed">Led a squad for the SM
+                                            Malls Online App, handling task management, code reviews, and Agile sprint
+                                            planning to deliver high-quality features on time.</p>
                                         <div class="space-y-2">
                                             <div class="flex items-start">
                                                 <div
                                                     class="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 mr-2 flex-shrink-0">
                                                 </div>
-                                                <p class="text-sm text-gray-600">
-                                                    Designed and maintained a cross-platform design
-                                                    system, improving UI consistency and reducing
-                                                    design-to-development turnaround by 20%
+                                                <p class="text-sm text-gray-600">Designed and maintained a
+                                                    cross-platform design system, improving UI consistency and reducing
+                                                    design-to-development turnaround by 20%</p>
+                                            </div>
+                                            <div class="flex items-start">
+                                                <div
+                                                    class="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 mr-2 flex-shrink-0">
+                                                </div>
+                                                <p class="text-sm text-gray-600">Contributed to front-end development
+                                                    and collaborated with UI/UX designers to enhance customer experience
                                                 </p>
                                             </div>
                                             <div class="flex items-start">
                                                 <div
                                                     class="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 mr-2 flex-shrink-0">
                                                 </div>
-                                                <p class="text-sm text-gray-600">
-                                                    Contributed to front-end development and
-                                                    collaborated with UI/UX designers to enhance
-                                                    customer experience
-                                                </p>
-                                            </div>
-                                            <div class="flex items-start">
-                                                <div
-                                                    class="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 mr-2 flex-shrink-0">
-                                                </div>
-                                                <p class="text-sm text-gray-600">
-                                                    Managed squad operations including task delegation,
-                                                    sprint planning, and quality assurance
-                                                </p>
+                                                <p class="text-sm text-gray-600">Managed squad operations including task
+                                                    delegation, sprint planning, and quality assurance</p>
                                             </div>
                                         </div>
                                     </div>
@@ -2141,11 +2013,8 @@
                                                     </svg>
                                                 </div>
                                                 <div>
-                                                    <h3 class="text-lg font-bold text-gray-800">
-                                                        Software Engineer
-                                                    </h3>
-                                                    <p class="text-sm text-green-600 font-medium">
-                                                        Straive (SPi Global)
+                                                    <h3 class="text-lg font-bold text-gray-800">Software Engineer</h3>
+                                                    <p class="text-sm text-green-600 font-medium">Straive (SPi Global)
                                                     </p>
                                                 </div>
                                             </div>
@@ -2153,37 +2022,29 @@
                                                 class="text-xs bg-green-100 text-green-800 px-3 py-1 rounded-full font-medium">May
                                                 2022 - Oct 2023</span>
                                         </div>
-                                        <p class="text-sm text-gray-600 mb-3 leading-relaxed">
-                                            Maintained and optimized a major US news website,
-                                            ensuring accurate, real-time content updates.
-                                        </p>
+                                        <p class="text-sm text-gray-600 mb-3 leading-relaxed">Maintained and optimized a
+                                            major US news website, ensuring accurate, real-time content updates.</p>
                                         <div class="space-y-2">
                                             <div class="flex items-start">
                                                 <div
                                                     class="w-1.5 h-1.5 bg-green-500 rounded-full mt-2 mr-2 flex-shrink-0">
                                                 </div>
-                                                <p class="text-sm text-gray-600">
-                                                    Automated repetitive CMS processes, cutting manual
-                                                    workload by 30% and boosting efficiency
-                                                </p>
+                                                <p class="text-sm text-gray-600">Automated repetitive CMS processes,
+                                                    cutting manual workload by 30% and boosting efficiency</p>
                                             </div>
                                             <div class="flex items-start">
                                                 <div
                                                     class="w-1.5 h-1.5 bg-green-500 rounded-full mt-2 mr-2 flex-shrink-0">
                                                 </div>
-                                                <p class="text-sm text-gray-600">
-                                                    Coordinated with US clients and internal teams to
-                                                    deliver high-quality, on-time updates
-                                                </p>
+                                                <p class="text-sm text-gray-600">Coordinated with US clients and
+                                                    internal teams to deliver high-quality, on-time updates</p>
                                             </div>
                                             <div class="flex items-start">
                                                 <div
                                                     class="w-1.5 h-1.5 bg-green-500 rounded-full mt-2 mr-2 flex-shrink-0">
                                                 </div>
-                                                <p class="text-sm text-gray-600">
-                                                    Ensured real-time content accuracy and website
-                                                    performance optimization
-                                                </p>
+                                                <p class="text-sm text-gray-600">Ensured real-time content accuracy and
+                                                    website performance optimization</p>
                                             </div>
                                         </div>
                                     </div>
@@ -2208,12 +2069,9 @@
                                                     </svg>
                                                 </div>
                                                 <div>
-                                                    <h3 class="text-lg font-bold text-gray-800">
-                                                        Software Developer
-                                                    </h3>
-                                                    <p class="text-sm text-purple-600 font-medium">
-                                                        Northeast Business Solutions
-                                                    </p>
+                                                    <h3 class="text-lg font-bold text-gray-800">Software Developer</h3>
+                                                    <p class="text-sm text-purple-600 font-medium">Northeast Business
+                                                        Solutions</p>
                                                 </div>
                                             </div>
                                             <span
@@ -2221,43 +2079,35 @@
                                                 2019 - Apr 2022</span>
                                         </div>
                                         <div class="mb-3">
-                                            <span class="text-sm font-medium text-gray-700">Key Projects:
-                                            </span>
+                                            <span class="text-sm font-medium text-gray-700">Key Projects: </span>
                                             <span class="text-sm text-gray-600">HRIS, WorkSched</span>
                                         </div>
-                                        <p class="text-sm text-gray-600 mb-3 leading-relaxed">
-                                            Developed and maintained an HRIS/Payroll Web Application
-                                            and ESS App, increasing user adoption by 40%.
-                                        </p>
+                                        <p class="text-sm text-gray-600 mb-3 leading-relaxed">Developed and maintained
+                                            an HRIS/Payroll Web Application and ESS App, increasing user adoption by
+                                            40%.</p>
                                         <div class="space-y-2">
                                             <div class="flex items-start">
                                                 <div
                                                     class="w-1.5 h-1.5 bg-purple-500 rounded-full mt-2 mr-2 flex-shrink-0">
                                                 </div>
-                                                <p class="text-sm text-gray-600">
-                                                    Implemented real-time ESS-HRIS synchronization,
-                                                    reducing payroll errors and improving reporting
-                                                    accuracy
-                                                </p>
+                                                <p class="text-sm text-gray-600">Implemented real-time ESS-HRIS
+                                                    synchronization, reducing payroll errors and improving reporting
+                                                    accuracy</p>
                                             </div>
                                             <div class="flex items-start">
                                                 <div
                                                     class="w-1.5 h-1.5 bg-purple-500 rounded-full mt-2 mr-2 flex-shrink-0">
                                                 </div>
-                                                <p class="text-sm text-gray-600">
-                                                    Contributed across the full SDLC, collaborating with
-                                                    cross-functional teams for testing, deployment, and
-                                                    enhancements
-                                                </p>
+                                                <p class="text-sm text-gray-600">Contributed across the full SDLC,
+                                                    collaborating with cross-functional teams for testing, deployment,
+                                                    and enhancements</p>
                                             </div>
                                             <div class="flex items-start">
                                                 <div
                                                     class="w-1.5 h-1.5 bg-purple-500 rounded-full mt-2 mr-2 flex-shrink-0">
                                                 </div>
-                                                <p class="text-sm text-gray-600">
-                                                    Built comprehensive HR management system with
-                                                    payroll, attendance, and leave management modules
-                                                </p>
+                                                <p class="text-sm text-gray-600">Built comprehensive HR management
+                                                    system with payroll, attendance, and leave management modules</p>
                                             </div>
                                         </div>
                                     </div>
@@ -2277,16 +2127,13 @@
                     <span class="ml-4 text-sm text-gray-700 font-medium">Contact</span>
                 </div>
                 <div class="p-6 overflow-y-auto text-gray-800 bg-gradient-to-br from-gray-50 to-white"
-                    style="height: calc(100% - 2rem)">
+                    style="height: calc(100% - 2rem);">
                     <div class="max-w-3xl mx-auto">
                         <div class="text-center mb-8">
                             <h2
                                 class="text-3xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-2">
-                                Get In Touch
-                            </h2>
-                            <p class="text-gray-600">
-                                Let's discuss your next project or opportunity
-                            </p>
+                                Get In Touch</h2>
+                            <p class="text-gray-600">Let's discuss your next project or opportunity</p>
                         </div>
 
                         <div class="grid md:grid-cols-3 gap-4 mb-8">
@@ -2301,9 +2148,7 @@
                                     </svg>
                                 </div>
                                 <h3 class="font-semibold text-gray-800 mb-1">Email</h3>
-                                <p class="text-sm text-gray-600 break-all">
-                                    ronaldallen.angeles@gmail.com
-                                </p>
+                                <p class="text-sm text-gray-600 break-all">ronaldallen.angeles@gmail.com</p>
                             </div>
 
                             <div
@@ -2347,9 +2192,7 @@
                                             d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
                                     </svg>
                                 </div>
-                                <h3 class="text-xl font-semibold text-gray-800">
-                                    Send a Message
-                                </h3>
+                                <h3 class="text-xl font-semibold text-gray-800">Send a Message</h3>
                             </div>
 
                             <form class="space-y-4" onsubmit="handleContactForm(event)">
@@ -2357,7 +2200,7 @@
                                     <label class="block text-sm font-medium text-gray-700 mb-2">Subject</label>
                                     <input type="text" id="emailSubject"
                                         class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
-                                        placeholder="What would you like to discuss?" required />
+                                        placeholder="What would you like to discuss?" required>
                                 </div>
                                 <div>
                                     <label class="block text-sm font-medium text-gray-700 mb-2">Message</label>
@@ -2403,16 +2246,13 @@
                     <span class="ml-4 text-sm text-gray-700 font-medium">Socials</span>
                 </div>
                 <div class="p-6 overflow-y-auto text-gray-800 bg-gradient-to-br from-gray-50 to-white"
-                    style="height: calc(100% - 2rem)">
+                    style="height: calc(100% - 2rem);">
                     <div class="max-w-3xl mx-auto">
                         <div class="text-center mb-8">
                             <h2
                                 class="text-3xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-2">
-                                Connect With Me
-                            </h2>
-                            <p class="text-gray-600">
-                                Find me across different platforms and let's connect!
-                            </p>
+                                Connect With Me</h2>
+                            <p class="text-gray-600">Find me across different platforms and let's connect!</p>
                         </div>
 
                         <div class="grid md:grid-cols-2 gap-6">
@@ -2427,15 +2267,10 @@
                                         </svg>
                                     </div>
                                     <div class="flex-1">
-                                        <h3 class="text-lg font-bold text-gray-800 group-hover:text-gray-900">
-                                            GitHub
+                                        <h3 class="text-lg font-bold text-gray-800 group-hover:text-gray-900">GitHub
                                         </h3>
-                                        <p class="text-sm text-gray-600 group-hover:text-gray-700">
-                                            @ronaldallen21
-                                        </p>
-                                        <p class="text-xs text-gray-500 mt-1">
-                                            View my code repositories
-                                        </p>
+                                        <p class="text-sm text-gray-600 group-hover:text-gray-700">@ronaldallen21</p>
+                                        <p class="text-xs text-gray-500 mt-1">View my code repositories</p>
                                     </div>
                                     <svg class="w-5 h-5 text-gray-400 group-hover:text-gray-600 group-hover:translate-x-1 transition-all"
                                         fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -2457,15 +2292,11 @@
                                         </svg>
                                     </div>
                                     <div class="flex-1">
-                                        <h3 class="text-lg font-bold text-gray-800 group-hover:text-blue-600">
-                                            LinkedIn
+                                        <h3 class="text-lg font-bold text-gray-800 group-hover:text-blue-600">LinkedIn
                                         </h3>
-                                        <p class="text-sm text-gray-600 group-hover:text-gray-700">
-                                            Ronald Allen Angeles
+                                        <p class="text-sm text-gray-600 group-hover:text-gray-700">Ronald Allen Angeles
                                         </p>
-                                        <p class="text-xs text-gray-500 mt-1">
-                                            Professional network
-                                        </p>
+                                        <p class="text-xs text-gray-500 mt-1">Professional network</p>
                                     </div>
                                     <svg class="w-5 h-5 text-gray-400 group-hover:text-blue-600 group-hover:translate-x-1 transition-all"
                                         fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -2487,15 +2318,11 @@
                                         </svg>
                                     </div>
                                     <div class="flex-1">
-                                        <h3 class="text-lg font-bold text-gray-800 group-hover:text-orange-600">
-                                            Stack Overflow
-                                        </h3>
-                                        <p class="text-sm text-gray-600 group-hover:text-gray-700">
-                                            Ronald Allen Angeles
+                                        <h3 class="text-lg font-bold text-gray-800 group-hover:text-orange-600">Stack
+                                            Overflow</h3>
+                                        <p class="text-sm text-gray-600 group-hover:text-gray-700">Ronald Allen Angeles
                                         </p>
-                                        <p class="text-xs text-gray-500 mt-1">
-                                            Developer community
-                                        </p>
+                                        <p class="text-xs text-gray-500 mt-1">Developer community</p>
                                     </div>
                                     <svg class="w-5 h-5 text-gray-400 group-hover:text-orange-600 group-hover:translate-x-1 transition-all"
                                         fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -2516,12 +2343,9 @@
                                         </svg>
                                     </div>
                                     <div class="flex-1">
-                                        <h3 class="text-lg font-bold text-gray-800 group-hover:text-purple-600">
-                                            Figma
+                                        <h3 class="text-lg font-bold text-gray-800 group-hover:text-purple-600">Figma
                                         </h3>
-                                        <p class="text-sm text-gray-600 group-hover:text-gray-700">
-                                            @ronald_allen
-                                        </p>
+                                        <p class="text-sm text-gray-600 group-hover:text-gray-700">@ronald_allen</p>
                                         <p class="text-xs text-gray-500 mt-1">Design portfolio</p>
                                     </div>
                                     <svg class="w-5 h-5 text-gray-400 group-hover:text-purple-600 group-hover:translate-x-1 transition-all"
@@ -2543,16 +2367,11 @@
                                             d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                                     </svg>
                                 </div>
-                                <h3 class="text-xl font-semibold text-gray-800">
-                                    Let's Collaborate!
-                                </h3>
+                                <h3 class="text-xl font-semibold text-gray-800">Let's Collaborate!</h3>
                             </div>
-                            <p class="text-gray-600 leading-relaxed">
-                                I'm always open to discussing new opportunities, interesting
-                                projects, or just having a chat about technology and
-                                development. Feel free to reach out through any of these
-                                platforms!
-                            </p>
+                            <p class="text-gray-600 leading-relaxed">I'm always open to discussing new opportunities,
+                                interesting projects, or just having a chat about technology and development. Feel free
+                                to reach out through any of these platforms!</p>
 
                             <div class="mt-4 flex flex-wrap gap-2">
                                 <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-xs font-medium">Open
@@ -2579,13 +2398,12 @@
                     <span class="ml-4 text-sm text-gray-700 font-medium">System Preferences</span>
                 </div>
                 <div class="p-6 overflow-y-auto text-gray-800 bg-gradient-to-br from-gray-50 to-white"
-                    style="height: calc(100% - 2rem)">
+                    style="height: calc(100% - 2rem);">
                     <div class="max-w-3xl mx-auto">
                         <div class="text-center mb-8">
                             <h2
                                 class="text-3xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-2">
-                                System Preferences
-                            </h2>
+                                System Preferences</h2>
                             <p class="text-gray-600">Customize your RonaldOS experience</p>
                         </div>
 
@@ -2600,22 +2418,18 @@
                                             d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zM21 5a2 2 0 00-2-2h-4a2 2 0 00-2 2v12a4 4 0 004 4h4a2 2 0 002-2V5z" />
                                     </svg>
                                 </div>
-                                <h3 class="text-xl font-semibold text-gray-800">
-                                    Appearance
-                                </h3>
+                                <h3 class="text-xl font-semibold text-gray-800">Appearance</h3>
                             </div>
 
                             <div class="space-y-4">
                                 <div class="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
                                     <div>
                                         <h4 class="font-medium text-gray-800">Dark Mode</h4>
-                                        <p class="text-sm text-gray-600">
-                                            Switch between light and dark themes
-                                        </p>
+                                        <p class="text-sm text-gray-600">Switch between light and dark themes</p>
                                     </div>
                                     <label class="relative inline-flex items-center cursor-pointer">
                                         <input type="checkbox" id="darkModeToggle" class="sr-only peer"
-                                            onchange="toggleDarkMode(event)" />
+                                            onchange="toggleDarkMode(event)">
                                         <div
                                             class="toggle-track w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 rounded-full peer peer-checked:bg-blue-600 relative">
                                             <div
@@ -2628,13 +2442,12 @@
                                 <div class="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
                                     <div>
                                         <h4 class="font-medium text-gray-800">Show Widgets</h4>
-                                        <p class="text-sm text-gray-600">
-                                            Display desktop widgets (clock, calendar, search)
-                                        </p>
+                                        <p class="text-sm text-gray-600">Display desktop widgets (clock, calendar,
+                                            search)</p>
                                     </div>
                                     <label class="relative inline-flex items-center cursor-pointer">
                                         <input type="checkbox" id="widgetsToggle" class="sr-only peer" checked
-                                            onchange="toggleWidgets(event)" />
+                                            onchange="toggleWidgets(event)">
                                         <div
                                             class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-blue-600">
                                         </div>
@@ -2661,18 +2474,18 @@
                                 <div class="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
                                     <div>
                                         <h4 class="font-medium text-gray-800">Animations</h4>
-                                        <p class="text-sm text-gray-600">
-                                            Enable smooth transitions and animations
-                                        </p>
+                                        <p class="text-sm text-gray-600">Enable smooth transitions and animations</p>
                                     </div>
                                     <label class="relative inline-flex items-center cursor-pointer">
                                         <input type="checkbox" id="animationsToggle" class="sr-only peer" checked
-                                            onchange="toggleAnimations(event)" />
+                                            onchange="toggleAnimations(event)">
                                         <div
                                             class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-blue-600">
                                         </div>
                                     </label>
                                 </div>
+
+
                             </div>
                         </div>
 
@@ -2687,9 +2500,7 @@
                                             d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                                     </svg>
                                 </div>
-                                <h3 class="text-xl font-semibold text-gray-800">
-                                    About RonaldOS
-                                </h3>
+                                <h3 class="text-xl font-semibold text-gray-800">About RonaldOS</h3>
                             </div>
 
                             <div class="space-y-3">
@@ -2723,7 +2534,7 @@
                         class="w-3 h-3 bg-red-500 rounded-full hover:bg-red-600"></button>
                     <span class="ml-4 text-sm text-gray-700 font-medium">Documents</span>
                 </div>
-                <div class="bg-white" style="height: calc(100% - 2rem)">
+                <div class="bg-white" style="height: calc(100% - 2rem);">
                     <!-- Finder-style toolbar -->
                     <div class="bg-gray-50 border-b border-gray-200 px-4 py-2 flex items-center space-x-4">
                         <div class="flex items-center space-x-2">
@@ -2776,9 +2587,7 @@
                                             stroke-width="1" />
                                         <rect x="10" y="6" width="24" height="36" rx="1" fill="#fc8181" />
                                         <text x="22" y="18" font-family="Arial, sans-serif" font-size="6"
-                                            font-weight="bold" fill="white" text-anchor="middle">
-                                            PDF
-                                        </text>
+                                            font-weight="bold" fill="white" text-anchor="middle">PDF</text>
                                         <rect x="12" y="22" width="20" height="1" fill="white" opacity="0.8" />
                                         <rect x="12" y="26" width="16" height="1" fill="white" opacity="0.8" />
                                         <rect x="12" y="30" width="18" height="1" fill="white" opacity="0.8" />
@@ -2787,9 +2596,7 @@
                                 </div>
                                 <div class="flex-1">
                                     <div class="font-medium text-gray-900">Resume.pdf</div>
-                                    <div class="text-sm text-gray-500">
-                                        PDF Document • 245 KB
-                                    </div>
+                                    <div class="text-sm text-gray-500">PDF Document • 245 KB</div>
                                 </div>
                                 <div class="text-xs text-gray-400">Today, 2:30 PM</div>
                             </div>
@@ -2804,9 +2611,7 @@
                                             stroke-width="1" />
                                         <rect x="10" y="6" width="24" height="36" rx="1" fill="#fc8181" />
                                         <text x="22" y="18" font-family="Arial, sans-serif" font-size="6"
-                                            font-weight="bold" fill="white" text-anchor="middle">
-                                            PDF
-                                        </text>
+                                            font-weight="bold" fill="white" text-anchor="middle">PDF</text>
                                         <rect x="12" y="22" width="20" height="1" fill="white" opacity="0.8" />
                                         <rect x="12" y="26" width="16" height="1" fill="white" opacity="0.8" />
                                         <rect x="12" y="30" width="18" height="1" fill="white" opacity="0.8" />
@@ -2814,12 +2619,8 @@
                                     </svg>
                                 </div>
                                 <div class="flex-1">
-                                    <div class="font-medium text-gray-900">
-                                        Cover Letter.pdf
-                                    </div>
-                                    <div class="text-sm text-gray-500">
-                                        PDF Document • 189 KB
-                                    </div>
+                                    <div class="font-medium text-gray-900">Cover Letter.pdf</div>
+                                    <div class="text-sm text-gray-500">PDF Document • 189 KB</div>
                                 </div>
                                 <div class="text-xs text-gray-400">Today, 2:28 PM</div>
                             </div>
@@ -2849,52 +2650,46 @@
 
         // Welcome page animation
         function startWelcomeAnimation() {
-            const welcomeText = document.getElementById("welcomeText");
-            const typingContainer = document.getElementById("typingContainer");
-            const enterButton = document.getElementById("enterButton");
+            const welcomeText = document.getElementById('welcomeText');
+            const typingContainer = document.getElementById('typingContainer');
+            const enterButton = document.getElementById('enterButton');
 
             if (animationsEnabled) {
                 // Fade in welcome text
                 setTimeout(() => {
-                    welcomeText.textContent = "Welcome to RonaldOS";
-                    welcomeText.classList.add("fade-in");
-                    welcomeText.style.opacity = "1";
+                    welcomeText.textContent = 'Welcome to RonaldOS';
+                    welcomeText.classList.add('fade-in');
+                    welcomeText.style.opacity = '1';
                 }, 500);
 
                 // Start typing animation
                 setTimeout(() => {
-                    typeText(
-                        "A digital space where creativity meets code.",
-                        typingContainer,
-                        () => {
-                            setTimeout(() => {
-                                // Add slide-up animation to text elements first
-                                welcomeText.classList.add("slide-up");
-                                typingContainer.classList.add("slide-up");
+                    typeText('A digital space where creativity meets code.', typingContainer, () => {
+                        setTimeout(() => {
+                            // Add slide-up animation to text elements first
+                            welcomeText.classList.add('slide-up');
+                            typingContainer.classList.add('slide-up');
 
-                                // Show button only after text slide-up animation completes (1.2s duration)
-                                setTimeout(() => {
-                                    enterButton.classList.remove("hidden");
-                                    enterButton.classList.add("button-fade-pop");
-                                }, 1200); // Wait for slide-up animation to complete
-                            }, 1000);
-                        }
-                    );
+                            // Show button only after text slide-up animation completes (1.2s duration)
+                            setTimeout(() => {
+                                enterButton.classList.remove('hidden');
+                                enterButton.classList.add('button-fade-pop');
+                            }, 1200); // Wait for slide-up animation to complete
+                        }, 1000);
+                    });
                 }, 3000);
             } else {
                 // No animations - show everything immediately
-                welcomeText.textContent = "Welcome to RonaldOS";
-                welcomeText.style.opacity = "1";
-                typingContainer.textContent =
-                    "A digital space where creativity meets code.";
-                enterButton.classList.remove("hidden");
+                welcomeText.textContent = 'Welcome to RonaldOS';
+                welcomeText.style.opacity = '1';
+                typingContainer.textContent = 'A digital space where creativity meets code.';
+                enterButton.classList.remove('hidden');
             }
         }
 
         function typeText(text, container, callback) {
             let i = 0;
-            const cursor =
-                '<span class="typing-cursor inline-block align-baseline">|</span>';
+            const cursor = '<span class="typing-cursor inline-block align-baseline">|</span>';
 
             function type() {
                 if (i < text.length) {
@@ -2911,29 +2706,29 @@
 
         // Loading page
         function showLoadingPage() {
-            document.getElementById("welcomePage").classList.add("hidden");
-            document.getElementById("loadingPage").classList.remove("hidden");
+            document.getElementById('welcomePage').classList.add('hidden');
+            document.getElementById('loadingPage').classList.remove('hidden');
 
             const loadingTexts = [
-                "Booting up RonaldOS…",
-                "Loading creative workspace…",
-                "Initializing development environment…",
-                "Compiling awesome projects…",
-                "Connecting to innovation servers…",
-                "Optimizing user experience…",
-                "Ready to code!",
+                'Booting up RonaldOS…',
+                'Loading creative workspace…',
+                'Initializing development environment…',
+                'Compiling awesome projects…',
+                'Connecting to innovation servers…',
+                'Optimizing user experience…',
+                'Ready to code!'
             ];
 
             let currentTextIndex = 0;
-            const loadingTextElement = document.getElementById("loadingText");
+            const loadingTextElement = document.getElementById('loadingText');
 
             function showNextText() {
                 if (currentTextIndex < loadingTexts.length) {
                     loadingTextElement.textContent = loadingTexts[currentTextIndex];
-                    loadingTextElement.classList.add("loading-text");
+                    loadingTextElement.classList.add('loading-text');
                     currentTextIndex++;
                     setTimeout(() => {
-                        loadingTextElement.classList.remove("loading-text");
+                        loadingTextElement.classList.remove('loading-text');
                         setTimeout(showNextText, 200);
                     }, 700);
                 }
@@ -2947,42 +2742,41 @@
         }
 
         function transitionToMainScreen() {
-            const loadingPage = document.getElementById("loadingPage");
-            const mainPage = document.getElementById("mainPage");
+            const loadingPage = document.getElementById('loadingPage');
+            const mainPage = document.getElementById('mainPage');
 
             if (animationsEnabled) {
                 // Prepare main page for transition
-                mainPage.style.opacity = "0";
-                mainPage.style.transform = "scale(1.05)";
-                mainPage.classList.remove("hidden");
+                mainPage.style.opacity = '0';
+                mainPage.style.transform = 'scale(1.05)';
+                mainPage.classList.remove('hidden');
 
                 // Fade out loading page
-                loadingPage.style.transition = "opacity 0.6s ease-out";
-                loadingPage.style.opacity = "0";
+                loadingPage.style.transition = 'opacity 0.6s ease-out';
+                loadingPage.style.opacity = '0';
 
                 // After loading page fades out, animate main page in
                 setTimeout(() => {
-                    loadingPage.classList.add("hidden");
-                    loadingPage.style.opacity = "";
-                    loadingPage.style.transition = "";
+                    loadingPage.classList.add('hidden');
+                    loadingPage.style.opacity = '';
+                    loadingPage.style.transition = '';
 
                     // Animate main page in
-                    mainPage.style.transition =
-                        "opacity 0.8s ease-out, transform 0.8s ease-out";
-                    mainPage.style.opacity = "1";
-                    mainPage.style.transform = "scale(1)";
+                    mainPage.style.transition = 'opacity 0.8s ease-out, transform 0.8s ease-out';
+                    mainPage.style.opacity = '1';
+                    mainPage.style.transform = 'scale(1)';
 
                     // Clean up styles after animation
                     setTimeout(() => {
-                        mainPage.style.transition = "";
-                        mainPage.style.opacity = "";
-                        mainPage.style.transform = "";
+                        mainPage.style.transition = '';
+                        mainPage.style.opacity = '';
+                        mainPage.style.transform = '';
                     }, 800);
                 }, 600);
             } else {
                 // Instant transition without animation
-                loadingPage.classList.add("hidden");
-                mainPage.classList.remove("hidden");
+                loadingPage.classList.add('hidden');
+                mainPage.classList.remove('hidden');
             }
 
             // Initialize main page functionality
@@ -2997,40 +2791,37 @@
         function updateDateTime() {
             const now = new Date();
             const options = {
-                timeZone: "Asia/Manila",
-                weekday: "short",
-                month: "short",
-                day: "numeric",
-                hour: "2-digit",
-                minute: "2-digit",
-                hour12: true,
+                timeZone: 'Asia/Manila',
+                weekday: 'short',
+                month: 'short',
+                day: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit',
+                hour12: true
             };
 
-            const formatter = new Intl.DateTimeFormat("en-US", options);
+            const formatter = new Intl.DateTimeFormat('en-US', options);
             const parts = formatter.formatToParts(now);
 
-            let dateTimeString = "";
-            parts.forEach((part) => {
-                if (part.type === "weekday") dateTimeString += part.value + " ";
-                else if (part.type === "month") dateTimeString += part.value + " ";
-                else if (part.type === "day") dateTimeString += part.value + " ";
-                else if (part.type === "hour") dateTimeString += part.value;
-                else if (part.type === "literal" && part.value === ":")
-                    dateTimeString += ":";
-                else if (part.type === "minute") dateTimeString += part.value + " ";
-                else if (part.type === "dayPeriod") dateTimeString += part.value;
+            let dateTimeString = '';
+            parts.forEach(part => {
+                if (part.type === 'weekday') dateTimeString += part.value + ' ';
+                else if (part.type === 'month') dateTimeString += part.value + ' ';
+                else if (part.type === 'day') dateTimeString += part.value + ' ';
+                else if (part.type === 'hour') dateTimeString += part.value;
+                else if (part.type === 'literal' && part.value === ':') dateTimeString += ':';
+                else if (part.type === 'minute') dateTimeString += part.value + ' ';
+                else if (part.type === 'dayPeriod') dateTimeString += part.value;
             });
 
-            document.getElementById("datetime").textContent = dateTimeString.trim();
+            document.getElementById('datetime').textContent = dateTimeString.trim();
         }
 
         // Analog clock update
         function updateClock() {
             // Get current time in Philippine timezone using proper method
             const now = new Date();
-            const phtTime = new Date(
-                now.toLocaleString("en-US", { timeZone: "Asia/Manila" })
-            );
+            const phtTime = new Date(now.toLocaleString("en-US", { timeZone: "Asia/Manila" }));
 
             // Get the actual time components from the PHT time
             const hours = phtTime.getHours();
@@ -3043,22 +2834,22 @@
             // Calculate angles (12 o'clock is at top, 0 degrees)
             // Since 12 is at the top and we go clockwise, no offset needed
             const secondAngle = seconds * 6; // 6 degrees per second
-            const minuteAngle = minutes * 6; // 6 degrees per minute
+            const minuteAngle = minutes * 6; // 6 degrees per minute  
             const hourAngle = displayHours * 30 + minutes * 0.5; // 30 degrees per hour + minute adjustment
 
             // Update clock hands
-            const hourHand = document.getElementById("hourHand");
-            const minuteHand = document.getElementById("minuteHand");
-            const secondHand = document.getElementById("secondHand");
+            const hourHand = document.getElementById('hourHand');
+            const minuteHand = document.getElementById('minuteHand');
+            const secondHand = document.getElementById('secondHand');
 
             if (hourHand) {
-                hourHand.setAttribute("transform", `rotate(${hourAngle} 50 50)`);
+                hourHand.setAttribute('transform', `rotate(${hourAngle} 50 50)`);
             }
             if (minuteHand) {
-                minuteHand.setAttribute("transform", `rotate(${minuteAngle} 50 50)`);
+                minuteHand.setAttribute('transform', `rotate(${minuteAngle} 50 50)`);
             }
             if (secondHand) {
-                secondHand.setAttribute("transform", `rotate(${secondAngle} 50 50)`);
+                secondHand.setAttribute('transform', `rotate(${secondAngle} 50 50)`);
             }
         }
 
@@ -3070,53 +2861,32 @@
             const today = now.getDate();
 
             // Update month header
-            const monthNames = [
-                "January",
-                "February",
-                "March",
-                "April",
-                "May",
-                "June",
-                "July",
-                "August",
-                "September",
-                "October",
-                "November",
-                "December",
-            ];
-            document.getElementById(
-                "calendarMonth"
-            ).textContent = `${monthNames[currentMonth]} ${currentYear}`;
+            const monthNames = ['January', 'February', 'March', 'April', 'May', 'June',
+                'July', 'August', 'September', 'October', 'November', 'December'];
+            document.getElementById('calendarMonth').textContent = `${monthNames[currentMonth]} ${currentYear}`;
 
             // Get first day of month and number of days
             const firstDay = new Date(currentYear, currentMonth, 1).getDay();
-            const daysInMonth = new Date(
-                currentYear,
-                currentMonth + 1,
-                0
-            ).getDate();
+            const daysInMonth = new Date(currentYear, currentMonth + 1, 0).getDate();
 
-            const calendarDays = document.getElementById("calendarDays");
-            calendarDays.innerHTML = "";
+            const calendarDays = document.getElementById('calendarDays');
+            calendarDays.innerHTML = '';
 
             // Only add current month's days (no overflow from previous/next months)
             // Add empty cells for days before the first day of the month
             for (let i = 0; i < firstDay; i++) {
-                const dayElement = document.createElement("div");
-                dayElement.className =
-                    "text-xs text-center h-4 flex items-center justify-center";
+                const dayElement = document.createElement('div');
+                dayElement.className = 'text-xs text-center h-4 flex items-center justify-center';
                 calendarDays.appendChild(dayElement);
             }
 
             // Add current month's days
             for (let day = 1; day <= daysInMonth; day++) {
-                const dayElement = document.createElement("div");
-                dayElement.className =
-                    "text-xs font-medium text-gray-700 text-center h-4 flex items-center justify-center rounded hover:bg-gray-100 cursor-pointer transition-colors";
+                const dayElement = document.createElement('div');
+                dayElement.className = 'text-xs font-medium text-gray-700 text-center h-4 flex items-center justify-center rounded hover:bg-gray-100 cursor-pointer transition-colors';
 
                 if (day === today) {
-                    dayElement.className =
-                        "text-xs font-semibold text-white text-center h-4 flex items-center justify-center rounded bg-blue-500 cursor-pointer";
+                    dayElement.className = 'text-xs font-semibold text-white text-center h-4 flex items-center justify-center rounded bg-blue-500 cursor-pointer';
                 }
 
                 dayElement.textContent = day;
@@ -3126,87 +2896,80 @@
 
         // Folder animation functions
         function openFolder() {
-            const closedIcon = document.getElementById("folderClosedIcon");
-            const openIcon = document.getElementById("folderOpenIcon");
-            const folderContainer = document.querySelector(
-                "#documentsWidget .w-16.h-16"
-            );
+            const closedIcon = document.getElementById('folderClosedIcon');
+            const openIcon = document.getElementById('folderOpenIcon');
+            const folderContainer = document.querySelector('#documentsWidget .w-16.h-16');
 
             if (animationsEnabled) {
                 // Add opening animation
-                folderContainer.classList.add("folder-open");
+                folderContainer.classList.add('folder-open');
 
                 // Switch icons after a short delay
                 setTimeout(() => {
-                    closedIcon.classList.add("hidden");
-                    openIcon.classList.remove("hidden");
+                    closedIcon.classList.add('hidden');
+                    openIcon.classList.remove('hidden');
                 }, 150);
             } else {
                 // Switch icons immediately
-                closedIcon.classList.add("hidden");
-                openIcon.classList.remove("hidden");
+                closedIcon.classList.add('hidden');
+                openIcon.classList.remove('hidden');
             }
         }
 
         function closeFolder() {
-            const closedIcon = document.getElementById("folderClosedIcon");
-            const openIcon = document.getElementById("folderOpenIcon");
-            const folderContainer = document.querySelector(
-                "#documentsWidget .w-16.h-16"
-            );
+            const closedIcon = document.getElementById('folderClosedIcon');
+            const openIcon = document.getElementById('folderOpenIcon');
+            const folderContainer = document.querySelector('#documentsWidget .w-16.h-16');
 
             if (animationsEnabled) {
                 // Add closing animation
-                folderContainer.classList.remove("folder-open");
-                folderContainer.classList.add("folder-close");
+                folderContainer.classList.remove('folder-open');
+                folderContainer.classList.add('folder-close');
 
                 // Switch icons after a short delay
                 setTimeout(() => {
-                    openIcon.classList.add("hidden");
-                    closedIcon.classList.remove("hidden");
+                    openIcon.classList.add('hidden');
+                    closedIcon.classList.remove('hidden');
                 }, 150);
 
                 // Remove animation class after animation completes
                 setTimeout(() => {
-                    folderContainer.classList.remove("folder-close");
+                    folderContainer.classList.remove('folder-close');
                 }, 300);
             } else {
                 // Switch icons immediately
-                openIcon.classList.add("hidden");
-                closedIcon.classList.remove("hidden");
+                openIcon.classList.add('hidden');
+                closedIcon.classList.remove('hidden');
             }
         }
 
         // Window management
         function openWindow(type, fromDock = false) {
-            const windowId = type + "Window";
+            const windowId = type + 'Window';
             const windowElement = document.getElementById(windowId);
 
             // Close any open dropdowns when opening a window
-            const profileDropdown = document.getElementById("profileDropdown");
-            const settingsDropdown = document.getElementById("settingsDropdown");
+            const profileDropdown = document.getElementById('profileDropdown');
+            const settingsDropdown = document.getElementById('settingsDropdown');
             closeDropdown(profileDropdown);
             closeDropdown(settingsDropdown);
 
             // Special handling for documents window - animate folder opening
-            if (type === "documents") {
+            if (type === 'documents') {
                 openFolder();
             }
 
             // Add bounce animation only if opened directly from dock
             if (fromDock) {
-                const dockIcons = document.querySelectorAll(".dock-icon");
-                dockIcons.forEach((icon) => {
-                    const onclickAttr = icon.getAttribute("onclick");
-                    if (
-                        onclickAttr &&
-                        onclickAttr.includes(`openWindow('${type}', true)`)
-                    ) {
+                const dockIcons = document.querySelectorAll('.dock-icon');
+                dockIcons.forEach(icon => {
+                    const onclickAttr = icon.getAttribute('onclick');
+                    if (onclickAttr && onclickAttr.includes(`openWindow('${type}', true)`)) {
                         // Only add bounce if animations are enabled
                         if (animationsEnabled) {
-                            icon.classList.add("bounce");
+                            icon.classList.add('bounce');
                             setTimeout(() => {
-                                icon.classList.remove("bounce");
+                                icon.classList.remove('bounce');
                             }, 600);
                         }
                     }
@@ -3226,8 +2989,7 @@
 
             if (windowElement) {
                 // Force reset scroll position to top immediately
-                const scrollableContent =
-                    windowElement.querySelector(".overflow-y-auto");
+                const scrollableContent = windowElement.querySelector('.overflow-y-auto');
                 if (scrollableContent) {
                     scrollableContent.scrollTop = 0;
                     // Force a reflow to ensure scroll position is applied
@@ -3236,15 +2998,14 @@
 
                 if (animationsEnabled) {
                     // Animate window opening
-                    windowElement.style.opacity = "0";
-                    windowElement.style.transform = "translate(-50%, -50%) scale(0.9)";
-                    windowElement.classList.remove("hidden");
+                    windowElement.style.opacity = '0';
+                    windowElement.style.transform = 'translate(-50%, -50%) scale(0.9)';
+                    windowElement.classList.remove('hidden');
 
                     setTimeout(() => {
-                        windowElement.style.transition =
-                            "opacity 0.3s ease, transform 0.3s ease";
-                        windowElement.style.opacity = "1";
-                        windowElement.style.transform = "translate(-50%, -50%) scale(1)";
+                        windowElement.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+                        windowElement.style.opacity = '1';
+                        windowElement.style.transform = 'translate(-50%, -50%) scale(1)';
 
                         // Double-check scroll position after animation
                         if (scrollableContent) {
@@ -3253,10 +3014,10 @@
                     }, 10);
                 } else {
                     // Show window instantly - clear any existing styles and show immediately
-                    windowElement.style.transition = "";
-                    windowElement.style.opacity = "";
-                    windowElement.style.transform = "";
-                    windowElement.classList.remove("hidden");
+                    windowElement.style.transition = '';
+                    windowElement.style.opacity = '';
+                    windowElement.style.transform = '';
+                    windowElement.classList.remove('hidden');
                     // Double-check scroll position after showing
                     if (scrollableContent) {
                         scrollableContent.scrollTop = 0;
@@ -3268,47 +3029,44 @@
             }
 
             // Hide profile dropdown
-            closeDropdown(document.getElementById("profileDropdown"));
+            closeDropdown(document.getElementById('profileDropdown'));
         }
 
         function closeWindow(windowId) {
             const windowElement = document.getElementById(windowId);
 
             // Special handling for documents window - animate folder closing
-            if (windowId === "documentsWindow") {
+            if (windowId === 'documentsWindow') {
                 closeFolder();
             }
 
             if (windowElement) {
                 if (animationsEnabled) {
                     // Animate window closing
-                    windowElement.style.transition =
-                        "opacity 0.2s ease, transform 0.2s ease";
-                    windowElement.style.opacity = "0";
-                    windowElement.style.transform = "translate(-50%, -50%) scale(0.9)";
+                    windowElement.style.transition = 'opacity 0.2s ease, transform 0.2s ease';
+                    windowElement.style.opacity = '0';
+                    windowElement.style.transform = 'translate(-50%, -50%) scale(0.9)';
 
                     setTimeout(() => {
-                        windowElement.classList.add("hidden");
-                        windowElement.style.transition = "";
-                        windowElement.style.opacity = "";
-                        windowElement.style.transform = "";
+                        windowElement.classList.add('hidden');
+                        windowElement.style.transition = '';
+                        windowElement.style.opacity = '';
+                        windowElement.style.transform = '';
 
                         // Reset scroll position after closing
-                        const scrollableContent =
-                            windowElement.querySelector(".overflow-y-auto");
+                        const scrollableContent = windowElement.querySelector('.overflow-y-auto');
                         if (scrollableContent) {
                             scrollableContent.scrollTop = 0;
                         }
                     }, 200);
                 } else {
                     // Hide window instantly - clear any existing styles and hide immediately
-                    windowElement.style.transition = "";
-                    windowElement.style.opacity = "";
-                    windowElement.style.transform = "";
-                    windowElement.classList.add("hidden");
+                    windowElement.style.transition = '';
+                    windowElement.style.opacity = '';
+                    windowElement.style.transform = '';
+                    windowElement.classList.add('hidden');
                     // Reset scroll position immediately when closing
-                    const scrollableContent =
-                        windowElement.querySelector(".overflow-y-auto");
+                    const scrollableContent = windowElement.querySelector('.overflow-y-auto');
                     if (scrollableContent) {
                         scrollableContent.scrollTop = 0;
                     }
@@ -3319,21 +3077,14 @@
         }
 
         function updateDockIndicators(activeType) {
-            const types = [
-                "about",
-                "projects",
-                "skills",
-                "experience",
-                "contact",
-                "socials",
-            ];
-            types.forEach((type) => {
-                const indicator = document.getElementById(type + "Indicator");
+            const types = ['about', 'projects', 'skills', 'experience', 'contact', 'socials'];
+            types.forEach(type => {
+                const indicator = document.getElementById(type + 'Indicator');
                 if (indicator) {
                     if (type === activeType) {
-                        indicator.classList.add("active");
+                        indicator.classList.add('active');
                     } else {
-                        indicator.classList.remove("active");
+                        indicator.classList.remove('active');
                     }
                 }
             });
@@ -3341,7 +3092,7 @@
 
         // Tooltip
         function isMobileDevice() {
-            return window.innerWidth <= 768 || "ontouchstart" in window;
+            return window.innerWidth <= 768 || 'ontouchstart' in window;
         }
 
         function showTooltipDesktop(element, text) {
@@ -3350,9 +3101,9 @@
                 return;
             }
 
-            const tooltip = document.getElementById("tooltip");
+            const tooltip = document.getElementById('tooltip');
             tooltip.textContent = text;
-            tooltip.classList.remove("hidden");
+            tooltip.classList.remove('hidden');
 
             const rect = element.getBoundingClientRect();
             const tooltipRect = tooltip.getBoundingClientRect();
@@ -3361,44 +3112,44 @@
             const left = rect.left + rect.width / 2 - tooltipRect.width / 2;
             const top = rect.top - tooltipRect.height - 12; // 12px for arrow spacing
 
-            tooltip.style.left = left + "px";
-            tooltip.style.top = top + "px";
+            tooltip.style.left = left + 'px';
+            tooltip.style.top = top + 'px';
         }
 
         function hideTooltip() {
-            document.getElementById("tooltip").classList.add("hidden");
+            document.getElementById('tooltip').classList.add('hidden');
         }
 
+
+
         // Profile menu
-        document
-            .getElementById("profileMenuBtn")
-            .addEventListener("click", (e) => {
-                e.stopPropagation();
-                const dropdown = document.getElementById("profileDropdown");
-                const settingsDropdown = document.getElementById("settingsDropdown");
+        document.getElementById('profileMenuBtn').addEventListener('click', (e) => {
+            e.stopPropagation();
+            const dropdown = document.getElementById('profileDropdown');
+            const settingsDropdown = document.getElementById('settingsDropdown');
 
-                // Close settings dropdown with animation
-                closeDropdown(settingsDropdown);
+            // Close settings dropdown with animation
+            closeDropdown(settingsDropdown);
 
-                // Toggle profile dropdown
-                if (dropdown.classList.contains("hidden")) {
-                    openDropdown(dropdown);
-                } else {
-                    closeDropdown(dropdown);
-                }
-            });
+            // Toggle profile dropdown
+            if (dropdown.classList.contains('hidden')) {
+                openDropdown(dropdown);
+            } else {
+                closeDropdown(dropdown);
+            }
+        });
 
         // Settings menu
-        document.getElementById("settingsBtn").addEventListener("click", (e) => {
+        document.getElementById('settingsBtn').addEventListener('click', (e) => {
             e.stopPropagation();
-            const dropdown = document.getElementById("settingsDropdown");
-            const profileDropdown = document.getElementById("profileDropdown");
+            const dropdown = document.getElementById('settingsDropdown');
+            const profileDropdown = document.getElementById('profileDropdown');
 
             // Close profile dropdown with animation
             closeDropdown(profileDropdown);
 
             // Toggle settings dropdown
-            if (dropdown.classList.contains("hidden")) {
+            if (dropdown.classList.contains('hidden')) {
                 openDropdown(dropdown);
             } else {
                 closeDropdown(dropdown);
@@ -3407,8 +3158,8 @@
 
         // Helper function to close all dropdowns
         function closeAllDropdowns() {
-            const profileDropdown = document.getElementById("profileDropdown");
-            const settingsDropdown = document.getElementById("settingsDropdown");
+            const profileDropdown = document.getElementById('profileDropdown');
+            const settingsDropdown = document.getElementById('settingsDropdown');
             closeDropdown(profileDropdown);
             closeDropdown(settingsDropdown);
         }
@@ -3416,70 +3167,62 @@
         // Dropdown functions
         function openDropdown(dropdown) {
             if (animationsEnabled) {
-                dropdown.style.opacity = "0";
-                dropdown.style.transform = "translateY(-10px)";
-                dropdown.classList.remove("hidden");
+                dropdown.style.opacity = '0';
+                dropdown.style.transform = 'translateY(-10px)';
+                dropdown.classList.remove('hidden');
 
                 // Animate in
                 setTimeout(() => {
-                    dropdown.style.transition =
-                        "opacity 0.2s ease, transform 0.2s ease";
-                    dropdown.style.opacity = "1";
-                    dropdown.style.transform = "translateY(0)";
+                    dropdown.style.transition = 'opacity 0.2s ease, transform 0.2s ease';
+                    dropdown.style.opacity = '1';
+                    dropdown.style.transform = 'translateY(0)';
                 }, 10);
             } else {
                 // Show dropdown instantly - clear any existing styles and show immediately
-                dropdown.style.transition = "";
-                dropdown.style.opacity = "";
-                dropdown.style.transform = "";
-                dropdown.classList.remove("hidden");
+                dropdown.style.transition = '';
+                dropdown.style.opacity = '';
+                dropdown.style.transform = '';
+                dropdown.classList.remove('hidden');
             }
         }
 
         function closeDropdown(dropdown) {
-            if (!dropdown.classList.contains("hidden")) {
+            if (!dropdown.classList.contains('hidden')) {
                 if (animationsEnabled) {
-                    dropdown.style.transition =
-                        "opacity 0.15s ease, transform 0.15s ease";
-                    dropdown.style.opacity = "0";
-                    dropdown.style.transform = "translateY(-10px)";
+                    dropdown.style.transition = 'opacity 0.15s ease, transform 0.15s ease';
+                    dropdown.style.opacity = '0';
+                    dropdown.style.transform = 'translateY(-10px)';
 
                     setTimeout(() => {
-                        dropdown.classList.add("hidden");
-                        dropdown.style.transition = "";
-                        dropdown.style.opacity = "";
-                        dropdown.style.transform = "";
+                        dropdown.classList.add('hidden');
+                        dropdown.style.transition = '';
+                        dropdown.style.opacity = '';
+                        dropdown.style.transform = '';
                     }, 150);
                 } else {
                     // Hide dropdown instantly - clear any existing styles and hide immediately
-                    dropdown.style.transition = "";
-                    dropdown.style.opacity = "";
-                    dropdown.style.transform = "";
-                    dropdown.classList.add("hidden");
+                    dropdown.style.transition = '';
+                    dropdown.style.opacity = '';
+                    dropdown.style.transform = '';
+                    dropdown.classList.add('hidden');
                 }
             }
         }
 
         // Close dropdowns when clicking outside
-        document.addEventListener("click", (e) => {
-            const profileDropdown = document.getElementById("profileDropdown");
-            const settingsDropdown = document.getElementById("settingsDropdown");
-            const profileBtn = document.getElementById("profileMenuBtn");
-            const settingsBtn = document.getElementById("settingsBtn");
+        document.addEventListener('click', (e) => {
+            const profileDropdown = document.getElementById('profileDropdown');
+            const settingsDropdown = document.getElementById('settingsDropdown');
+            const profileBtn = document.getElementById('profileMenuBtn');
+            const settingsBtn = document.getElementById('settingsBtn');
 
             // Check if click is outside profile dropdown and button
-            if (
-                !profileDropdown.contains(e.target) &&
-                !profileBtn.contains(e.target)
-            ) {
+            if (!profileDropdown.contains(e.target) && !profileBtn.contains(e.target)) {
                 closeDropdown(profileDropdown);
             }
 
             // Check if click is outside settings dropdown and button
-            if (
-                !settingsDropdown.contains(e.target) &&
-                !settingsBtn.contains(e.target)
-            ) {
+            if (!settingsDropdown.contains(e.target) && !settingsBtn.contains(e.target)) {
                 closeDropdown(settingsDropdown);
             }
         });
@@ -3488,19 +3231,15 @@
         function handleContactForm(event) {
             event.preventDefault();
 
-            const subject = document.getElementById("emailSubject").value;
-            const message = document.getElementById("emailMessage").value;
-            const email = "ronaldallen.angeles@gmail.com";
+            const subject = document.getElementById('emailSubject').value;
+            const message = document.getElementById('emailMessage').value;
+            const email = 'ronaldallen.angeles@gmail.com';
 
             // Create Gmail compose URL with pre-filled subject and body
-            const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(
-                email
-            )}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(
-                message
-            )}`;
+            const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(email)}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
 
             // Open Gmail in a new tab
-            window.open(gmailUrl, "_blank", "noopener,noreferrer");
+            window.open(gmailUrl, '_blank', 'noopener,noreferrer');
 
             // Reset the form
             event.target.reset();
@@ -3508,34 +3247,30 @@
 
         // Open file function
         function openFile(fileType) {
-            let fileUrl = "";
+            let fileUrl = '';
 
-            if (fileType === "resume") {
+            if (fileType === 'resume') {
                 // Google Drive view link for resume
-                fileUrl =
-                    "https://drive.google.com/file/d/1RvVd-_JpPpF8ydt1GdJFEY_G3EAc0KAj/view";
-            } else if (fileType === "coverLetter") {
+                fileUrl = 'https://drive.google.com/file/d/1RvVd-_JpPpF8ydt1GdJFEY_G3EAc0KAj/view';
+            } else if (fileType === 'coverLetter') {
                 // Google Drive view link for cover letter
-                fileUrl =
-                    "https://drive.google.com/file/d/1ozOYvJHGtZ7_wtI2_tKYgXNkGmDchDwq/view";
+                fileUrl = 'https://drive.google.com/file/d/1ozOYvJHGtZ7_wtI2_tKYgXNkGmDchDwq/view';
             }
 
             // Open the file in a new tab
-            window.open(fileUrl, "_blank", "noopener,noreferrer");
+            window.open(fileUrl, '_blank', 'noopener,noreferrer');
         }
 
+
+
         // Enter button click
-        document
-            .getElementById("enterButton")
-            .addEventListener("click", showLoadingPage);
+        document.getElementById('enterButton').addEventListener('click', showLoadingPage);
 
         // Settings functions
         function toggleDarkMode(event) {
             // Determine which toggle was clicked and get its state
-            const windowToggle = document.getElementById("darkModeToggle");
-            const dropdownToggle = document.getElementById(
-                "darkModeToggleDropdown"
-            );
+            const windowToggle = document.getElementById('darkModeToggle');
+            const dropdownToggle = document.getElementById('darkModeToggleDropdown');
 
             // Get the current state from the event target or determine from current state
             let isDark;
@@ -3543,11 +3278,7 @@
                 isDark = event.target.checked;
             } else {
                 // Fallback: check current state
-                isDark = windowToggle
-                    ? windowToggle.checked
-                    : dropdownToggle
-                        ? dropdownToggle.checked
-                        : false;
+                isDark = windowToggle ? windowToggle.checked : (dropdownToggle ? dropdownToggle.checked : false);
             }
 
             // Sync both toggles to the same state
@@ -3565,24 +3296,22 @@
 
         function createRippleEffect(toggleElement, isDark) {
             const body = document.body;
-            const rippleOverlay = document.getElementById("rippleOverlay");
+            const rippleOverlay = document.getElementById('rippleOverlay');
 
             // Disable both dark mode toggles during animation
-            const windowToggle = document.getElementById("darkModeToggle");
-            const dropdownToggle = document.getElementById(
-                "darkModeToggleDropdown"
-            );
+            const windowToggle = document.getElementById('darkModeToggle');
+            const dropdownToggle = document.getElementById('darkModeToggleDropdown');
 
             // Add disabled styling
             if (windowToggle) {
                 windowToggle.disabled = true;
-                const windowLabel = windowToggle.closest("label");
-                if (windowLabel) windowLabel.classList.add("toggle-disabled");
+                const windowLabel = windowToggle.closest('label');
+                if (windowLabel) windowLabel.classList.add('toggle-disabled');
             }
             if (dropdownToggle) {
                 dropdownToggle.disabled = true;
-                const dropdownLabel = dropdownToggle.closest("label");
-                if (dropdownLabel) dropdownLabel.classList.add("toggle-disabled");
+                const dropdownLabel = dropdownToggle.closest('label');
+                if (dropdownLabel) dropdownLabel.classList.add('toggle-disabled');
             }
 
             // Get the position of the toggle switch
@@ -3591,64 +3320,42 @@
             const centerY = toggleRect.top + toggleRect.height / 2;
 
             // Calculate the maximum distance to cover entire screen including corners
-            const maxDistance =
-                Math.sqrt(
-                    Math.pow(window.innerWidth, 2) + Math.pow(window.innerHeight, 2)
-                ) * 2.2;
+            const maxDistance = Math.sqrt(
+                Math.pow(window.innerWidth, 2) + Math.pow(window.innerHeight, 2)
+            ) * 2.2;
 
             // Create ripple element
-            const ripple = document.createElement("div");
-            ripple.className = `ripple-circle ${isDark ? "ripple-dark" : "ripple-light"
-                }`;
-            ripple.style.width = maxDistance + "px";
-            ripple.style.height = maxDistance + "px";
-            ripple.style.left = centerX - maxDistance / 2 + "px";
-            ripple.style.top = centerY - maxDistance / 2 + "px";
+            const ripple = document.createElement('div');
+            ripple.className = `ripple-circle ${isDark ? 'ripple-dark' : 'ripple-light'}`;
+            ripple.style.width = maxDistance + 'px';
+            ripple.style.height = maxDistance + 'px';
+            ripple.style.left = (centerX - maxDistance / 2) + 'px';
+            ripple.style.top = (centerY - maxDistance / 2) + 'px';
 
             // Show overlay and add ripple
-            rippleOverlay.classList.remove("hidden");
+            rippleOverlay.classList.remove('hidden');
             rippleOverlay.appendChild(ripple);
 
             // Prevent body transitions during ripple
-            body.classList.add("ripple-transitioning");
+            body.classList.add('ripple-transitioning');
 
             // Get all visible components for wave timing
             const components = [
-                {
-                    element: document.getElementById("settingsDropdown"),
-                    name: "settings",
-                },
-                {
-                    element: document.querySelector(".fixed.top-12.right-52"),
-                    name: "calendar",
-                },
-                {
-                    element: document.querySelector(".fixed.top-12.right-4"),
-                    name: "clock",
-                },
-                {
-                    element: document.querySelector(".fixed.top-12.left-4"),
-                    name: "search",
-                },
-                {
-                    element: document.getElementById("profileWidget"),
-                    name: "profile",
-                },
-                { element: document.getElementById(currentWindow), name: "window" },
-            ].filter(
-                (c) =>
-                    c.element &&
-                    !c.element.classList.contains("hidden") &&
-                    c.element.style.display !== "none"
-            );
+                { element: document.getElementById('settingsDropdown'), name: 'settings' },
+                { element: document.querySelector('.fixed.top-12.right-52'), name: 'calendar' },
+                { element: document.querySelector('.fixed.top-12.right-4'), name: 'clock' },
+                { element: document.querySelector('.fixed.top-12.left-4'), name: 'search' },
+                { element: document.getElementById('profileWidget'), name: 'profile' },
+                { element: document.getElementById(currentWindow), name: 'window' }
+            ].filter(c => c.element && !c.element.classList.contains('hidden') && c.element.style.display !== 'none');
 
             // Start ripple animation
             requestAnimationFrame(() => {
-                ripple.classList.add("ripple-animate");
+                ripple.classList.add('ripple-animate');
             });
 
             // Calculate when the wave reaches each component and apply theme changes
-            components.forEach((comp) => {
+            components.forEach(comp => {
                 const compRect = comp.element.getBoundingClientRect();
                 const compCenterX = compRect.left + comp.element.offsetWidth / 2;
                 const compCenterY = compRect.top + comp.element.offsetHeight / 2;
@@ -3667,55 +3374,56 @@
                 setTimeout(() => {
                     // Apply theme change to this specific component
                     if (isDark) {
-                        comp.element.classList.add("dark");
+                        comp.element.classList.add('dark');
                     } else {
-                        comp.element.classList.remove("dark");
+                        comp.element.classList.remove('dark');
                     }
                 }, reachTime);
             });
 
             // Apply global dark mode after most components have been reached
             setTimeout(() => {
-                body.classList.remove("ripple-transitioning");
+                body.classList.remove('ripple-transitioning');
                 applyDarkMode(isDark);
             }, 600);
 
             // Clean up after animation completes
             setTimeout(() => {
-                rippleOverlay.classList.add("hidden");
-                rippleOverlay.innerHTML = "";
+                rippleOverlay.classList.add('hidden');
+                rippleOverlay.innerHTML = '';
 
                 // Re-enable both dark mode toggles after animation
                 if (windowToggle) {
                     windowToggle.disabled = false;
-                    const windowLabel = windowToggle.closest("label");
-                    if (windowLabel) windowLabel.classList.remove("toggle-disabled");
+                    const windowLabel = windowToggle.closest('label');
+                    if (windowLabel) windowLabel.classList.remove('toggle-disabled');
                 }
                 if (dropdownToggle) {
                     dropdownToggle.disabled = false;
-                    const dropdownLabel = dropdownToggle.closest("label");
-                    if (dropdownLabel)
-                        dropdownLabel.classList.remove("toggle-disabled");
+                    const dropdownLabel = dropdownToggle.closest('label');
+                    if (dropdownLabel) dropdownLabel.classList.remove('toggle-disabled');
                 }
             }, 1800);
         }
+
+
 
         function applyDarkMode(isDark) {
             const body = document.body;
 
             if (isDark) {
-                body.classList.add("dark");
-                console.log("Dark mode enabled");
+                body.classList.add('dark');
+                console.log('Dark mode enabled');
             } else {
-                body.classList.remove("dark");
-                console.log("Dark mode disabled");
+                body.classList.remove('dark');
+                console.log('Dark mode disabled');
             }
         }
 
         function toggleWidgets(event) {
             // Determine which toggle was clicked and get its state
-            const windowToggle = document.getElementById("widgetsToggle");
-            const dropdownToggle = document.getElementById("widgetsToggleDropdown");
+            const windowToggle = document.getElementById('widgetsToggle');
+            const dropdownToggle = document.getElementById('widgetsToggleDropdown');
 
             // Get the current state from the event target or determine from current state
             let showWidgets;
@@ -3723,161 +3431,192 @@
                 showWidgets = event.target.checked;
             } else {
                 // Fallback: check current state
-                showWidgets = windowToggle
-                    ? windowToggle.checked
-                    : dropdownToggle
-                        ? dropdownToggle.checked
-                        : true;
+                showWidgets = windowToggle ? windowToggle.checked : (dropdownToggle ? dropdownToggle.checked : true);
             }
 
             // Sync both toggles to the same state
             if (windowToggle) windowToggle.checked = showWidgets;
             if (dropdownToggle) dropdownToggle.checked = showWidgets;
 
-            const searchWidget = document.querySelector(".fixed.top-12.left-4");
-            const calendarWidget = document.querySelector(".fixed.top-12.right-52");
-            const clockWidget = document.querySelector(".fixed.top-12.right-4");
-            const profileWidget = document.getElementById("profileWidget");
-            const documentsWidget = document.getElementById("documentsWidget");
+            // Apply widget visibility based on current state
+            updateWidgetVisibility(showWidgets);
+        }
+
+        function updateWidgetVisibility(showWidgets) {
+            const searchWidget = document.querySelector('.fixed.top-12.left-4');
+            const calendarWidget = document.querySelector('.fixed.top-12.right-52');
+            const clockWidget = document.querySelector('.fixed.top-12.right-4');
+            const profileWidget = document.getElementById('profileWidget');
+            const documentsWidget = document.getElementById('documentsWidget');
+            const dock = document.querySelector('.dock');
 
             // Check if we're on mobile
             const isMobile = window.innerWidth <= 768;
 
-            // Get widgets based on device type
-            let widgets;
-            if (isMobile) {
-                // On mobile, only toggle search widget (calendar and clock stay hidden)
-                widgets = [searchWidget].filter((w) => w);
-            } else {
-                // On desktop, toggle all widgets
-                widgets = [searchWidget, calendarWidget, clockWidget].filter(
-                    (w) => w
-                );
+            // Determine which widgets should be visible
+            const shouldShowSearch = showWidgets;
+            const shouldShowCalendar = showWidgets && !isMobile;
+            const shouldShowClock = showWidgets && !isMobile;
+
+            // Handle search widget with smooth transitions
+            if (searchWidget) {
+                handleWidgetTransition(searchWidget, shouldShowSearch);
             }
 
-            if (showWidgets) {
-                // Show widgets
-                widgets.forEach((widget) => {
-                    if (widget) {
-                        if (animationsEnabled) {
-                            // Animated show
-                            widget.style.opacity = "0";
-                            widget.style.transform = "scale(0.8)";
-                            widget.style.display = "block";
+            // Handle calendar widget with smooth transitions
+            if (calendarWidget) {
+                handleWidgetTransition(calendarWidget, shouldShowCalendar);
+            }
 
-                            setTimeout(() => {
-                                widget.style.transition =
-                                    "opacity 0.3s ease, transform 0.3s ease";
-                                widget.style.opacity = "1";
-                                widget.style.transform = "scale(1)";
+            // Handle clock widget with smooth transitions
+            if (clockWidget) {
+                handleWidgetTransition(clockWidget, shouldShowClock);
+            }
 
-                                // Clean up after animation
-                                setTimeout(() => {
-                                    widget.style.transition = "";
-                                    widget.style.opacity = "";
-                                    widget.style.transform = "";
-                                }, 300);
-                            }, 10);
+            // Handle dock size transition
+            if (dock) {
+                handleDockTransition(dock, isMobile);
+            }
+
+            // Adjust profile and documents widget positions based on widget visibility
+            const hasVisibleWidgets = shouldShowSearch || shouldShowCalendar || shouldShowClock;
+
+            if (profileWidget) {
+                const newTop = hasVisibleWidgets ? '112px' : '48px'; // Original vs moved up position
+                if (profileWidget.style.top !== newTop) {
+                    if (animationsEnabled) {
+                        profileWidget.style.transition = 'top 0.3s cubic-bezier(0.4, 0, 0.2, 1)';
+                        profileWidget.style.top = newTop;
+                        setTimeout(() => {
+                            profileWidget.style.transition = '';
+                        }, 300);
+                    } else {
+                        profileWidget.style.transition = '';
+                        profileWidget.style.top = newTop;
+                    }
+                }
+            }
+
+            if (documentsWidget) {
+                const newTop = hasVisibleWidgets ? '300px' : '240px'; // Original vs moved up position
+                if (documentsWidget.style.top !== newTop) {
+                    if (animationsEnabled) {
+                        documentsWidget.style.transition = 'top 0.3s cubic-bezier(0.4, 0, 0.2, 1)';
+                        documentsWidget.style.top = newTop;
+                        setTimeout(() => {
+                            documentsWidget.style.transition = '';
+                        }, 300);
+                    } else {
+                        documentsWidget.style.transition = '';
+                        documentsWidget.style.top = newTop;
+                    }
+                }
+            }
+        }
+
+        function handleWidgetTransition(widget, shouldShow) {
+            const isCurrentlyVisible = widget.style.display !== 'none' && !widget.classList.contains('widget-hiding');
+
+            if (shouldShow && !isCurrentlyVisible) {
+                // Show widget with fade in effect
+                if (animationsEnabled) {
+                    widget.style.display = 'block';
+                    widget.style.opacity = '0';
+                    widget.style.transform = 'scale(0.9) translateY(-10px)';
+                    widget.style.transition = 'opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1), transform 0.3s cubic-bezier(0.4, 0, 0.2, 1)';
+                    widget.classList.remove('widget-hiding');
+
+                    requestAnimationFrame(() => {
+                        widget.style.opacity = '1';
+                        widget.style.transform = 'scale(1) translateY(0)';
+                    });
+
+                    setTimeout(() => {
+                        widget.style.transition = '';
+                        widget.style.opacity = '';
+                        widget.style.transform = '';
+                    }, 300);
+                } else {
+                    widget.style.display = 'block';
+                    widget.style.opacity = '';
+                    widget.style.transform = '';
+                    widget.classList.remove('widget-hiding');
+                }
+            } else if (!shouldShow && isCurrentlyVisible) {
+                // Hide widget with fade out effect
+                if (animationsEnabled) {
+                    widget.classList.add('widget-hiding');
+                    widget.style.transition = 'opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1), transform 0.25s cubic-bezier(0.4, 0, 0.2, 1)';
+                    widget.style.opacity = '0';
+                    widget.style.transform = 'scale(0.9) translateY(-10px)';
+
+                    setTimeout(() => {
+                        widget.style.display = 'none';
+                        widget.style.transition = '';
+                        widget.style.opacity = '';
+                        widget.style.transform = '';
+                        widget.classList.remove('widget-hiding');
+                    }, 250);
+                } else {
+                    widget.style.display = 'none';
+                    widget.style.opacity = '';
+                    widget.style.transform = '';
+                    widget.classList.remove('widget-hiding');
+                }
+            }
+        }
+
+        function handleDockTransition(dock, isMobile) {
+            const dockIcons = dock.querySelectorAll('.dock-icon > div');
+            const currentIsMobile = dockIcons.length > 0 ? dockIcons[0].classList.contains('w-16') : false;
+            const shouldBeMobile = isMobile;
+
+            // Only transition if there's actually a change needed
+            if (shouldBeMobile !== currentIsMobile) {
+                if (animationsEnabled) {
+                    // Add smooth transition to all dock icons with better easing
+                    dockIcons.forEach(iconDiv => {
+                        iconDiv.style.transition = 'all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94)';
+                    });
+
+                    // Also add transition to the dock container for overall smoothness
+                    dock.style.transition = 'all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94)';
+
+                    // Apply size changes with a slight delay for smoother visual effect
+                    requestAnimationFrame(() => {
+                        dockIcons.forEach(iconDiv => {
+                            if (shouldBeMobile) {
+                                // Switch to mobile size (16x16)
+                                iconDiv.classList.remove('w-20', 'h-20', 'md:w-20', 'md:h-20');
+                                iconDiv.classList.add('w-16', 'h-16');
+                            } else {
+                                // Switch to desktop size (20x20)
+                                iconDiv.classList.remove('w-16', 'h-16');
+                                iconDiv.classList.add('w-20', 'h-20', 'md:w-20', 'md:h-20');
+                            }
+                        });
+                    });
+
+                    // Clean up transitions after animation completes
+                    setTimeout(() => {
+                        dockIcons.forEach(iconDiv => {
+                            iconDiv.style.transition = '';
+                        });
+                        dock.style.transition = '';
+                    }, 400);
+                } else {
+                    // Apply size changes immediately without animation
+                    dockIcons.forEach(iconDiv => {
+                        iconDiv.style.transition = '';
+                        if (shouldBeMobile) {
+                            iconDiv.classList.remove('w-20', 'h-20', 'md:w-20', 'md:h-20');
+                            iconDiv.classList.add('w-16', 'h-16');
                         } else {
-                            // Instant show - no animations
-                            widget.style.transition = "";
-                            widget.style.opacity = "";
-                            widget.style.transform = "";
-                            widget.style.display = "block";
+                            iconDiv.classList.remove('w-16', 'h-16');
+                            iconDiv.classList.add('w-20', 'h-20', 'md:w-20', 'md:h-20');
                         }
-                    }
-                });
-
-                // Move profile and documents widgets back to original positions
-                if (profileWidget) {
-                    if (animationsEnabled) {
-                        profileWidget.style.transition = "top 0.3s ease";
-                        profileWidget.style.top = "112px"; // Original position (top-28 = 112px)
-
-                        // Clean up after animation
-                        setTimeout(() => {
-                            profileWidget.style.transition = "";
-                        }, 300);
-                    } else {
-                        // Instant movement - no transition
-                        profileWidget.style.transition = "";
-                        profileWidget.style.top = "112px";
-                    }
-                }
-
-                if (documentsWidget) {
-                    if (animationsEnabled) {
-                        documentsWidget.style.transition = "top 0.3s ease";
-                        documentsWidget.style.top = "300px"; // Original position
-
-                        // Clean up after animation
-                        setTimeout(() => {
-                            documentsWidget.style.transition = "";
-                        }, 300);
-                    } else {
-                        // Instant movement - no transition
-                        documentsWidget.style.transition = "";
-                        documentsWidget.style.top = "300px";
-                    }
-                }
-            } else {
-                // Hide widgets
-                widgets.forEach((widget) => {
-                    if (widget) {
-                        if (animationsEnabled) {
-                            // Animated hide
-                            widget.style.transition =
-                                "opacity 0.2s ease, transform 0.2s ease";
-                            widget.style.opacity = "0";
-                            widget.style.transform = "scale(0.8)";
-
-                            setTimeout(() => {
-                                widget.style.display = "none";
-                                widget.style.transition = "";
-                                widget.style.opacity = "";
-                                widget.style.transform = "";
-                            }, 200);
-                        } else {
-                            // Instant hide - no animations
-                            widget.style.transition = "";
-                            widget.style.opacity = "";
-                            widget.style.transform = "";
-                            widget.style.display = "none";
-                        }
-                    }
-                });
-
-                // Move profile and documents widgets upward when other widgets are hidden
-                if (profileWidget) {
-                    if (animationsEnabled) {
-                        profileWidget.style.transition = "top 0.3s ease";
-                        profileWidget.style.top = "48px"; // Move up to where search widget was (top-12 = 48px)
-
-                        // Clean up after animation
-                        setTimeout(() => {
-                            profileWidget.style.transition = "";
-                        }, 300);
-                    } else {
-                        // Instant movement - no transition
-                        profileWidget.style.transition = "";
-                        profileWidget.style.top = "48px";
-                    }
-                }
-
-                if (documentsWidget) {
-                    if (animationsEnabled) {
-                        documentsWidget.style.transition = "top 0.3s ease";
-                        documentsWidget.style.top = "240px"; // Move up accordingly
-
-                        // Clean up after animation
-                        setTimeout(() => {
-                            documentsWidget.style.transition = "";
-                        }, 300);
-                    } else {
-                        // Instant movement - no transition
-                        documentsWidget.style.transition = "";
-                        documentsWidget.style.top = "240px";
-                    }
+                    });
+                    dock.style.transition = '';
                 }
             }
         }
@@ -3889,21 +3628,15 @@
             }
 
             // Determine which toggle was clicked and get its state
-            const windowToggle = document.getElementById("animationsToggle");
-            const dropdownToggle = document.getElementById(
-                "animationsToggleDropdown"
-            );
+            const windowToggle = document.getElementById('animationsToggle');
+            const dropdownToggle = document.getElementById('animationsToggleDropdown');
 
             // Get the current state from the event target or determine from current state
             if (event && event.target) {
                 animationsEnabled = event.target.checked;
             } else {
                 // Fallback: check current state
-                animationsEnabled = windowToggle
-                    ? windowToggle.checked
-                    : dropdownToggle
-                        ? dropdownToggle.checked
-                        : true;
+                animationsEnabled = windowToggle ? windowToggle.checked : (dropdownToggle ? dropdownToggle.checked : true);
             }
 
             // Sync both toggles to the same state
@@ -3920,20 +3653,18 @@
 
             if (!animationsEnabled) {
                 // Disable all animations and transitions
-                body.classList.add("no-animations");
+                body.classList.add('no-animations');
             } else {
                 // Enable animations and transitions
-                body.classList.remove("no-animations");
+                body.classList.remove('no-animations');
             }
         }
 
         // Initialize animation preference
         function initializeAnimationPreference() {
             // Set toggle states to match global variable
-            const windowToggle = document.getElementById("animationsToggle");
-            const dropdownToggle = document.getElementById(
-                "animationsToggleDropdown"
-            );
+            const windowToggle = document.getElementById('animationsToggle');
+            const dropdownToggle = document.getElementById('animationsToggleDropdown');
 
             if (windowToggle) windowToggle.checked = animationsEnabled;
             if (dropdownToggle) dropdownToggle.checked = animationsEnabled;
@@ -3951,17 +3682,17 @@
             if (!animationsEnabled) return;
 
             // Remove any existing active class first
-            element.classList.remove("active");
+            element.classList.remove('active');
 
             // Force a reflow to ensure the removal takes effect
             element.offsetHeight;
 
             // Add active class to trigger ripple
-            element.classList.add("active");
+            element.classList.add('active');
 
             // Remove active class after animation
             setTimeout(() => {
-                element.classList.remove("active");
+                element.classList.remove('active');
             }, 400);
         }
 
@@ -3970,49 +3701,29 @@
             // No longer needed - theme changes are handled by the main ripple effect
         }
 
+        // Handle window resize to update widget visibility
+        function handleResize() {
+            // Get current widget toggle state
+            const windowToggle = document.getElementById('widgetsToggle');
+            const dropdownToggle = document.getElementById('widgetsToggleDropdown');
+            const showWidgets = windowToggle ? windowToggle.checked : (dropdownToggle ? dropdownToggle.checked : true);
+
+            // Update widget visibility based on new screen size and current toggle state
+            updateWidgetVisibility(showWidgets);
+        }
+
         // Start the welcome animation when page loads
-        window.addEventListener("load", () => {
+        window.addEventListener('load', () => {
             // Initialize animation preference
             initializeAnimationPreference();
             // Start welcome animation
             startWelcomeAnimation();
         });
+
+        // Add resize listener to handle screen size changes
+        window.addEventListener('resize', handleResize);
     </script>
-    <script>
-        (function () {
-            function c() {
-                var b = a.contentDocument || a.contentWindow.document;
-                if (b) {
-                    var d = b.createElement("script");
-                    d.innerHTML =
-                        "window.__CF$cv$params={r:'98b079bb811dbc4b',t:'MTc1OTg3MjM3NC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";
-                    b.getElementsByTagName("head")[0].appendChild(d);
-                }
-            }
-            if (document.body) {
-                var a = document.createElement("iframe");
-                a.height = 1;
-                a.width = 1;
-                a.style.position = "absolute";
-                a.style.top = 0;
-                a.style.left = 0;
-                a.style.border = "none";
-                a.style.visibility = "hidden";
-                document.body.appendChild(a);
-                if ("loading" !== document.readyState) c();
-                else if (window.addEventListener)
-                    document.addEventListener("DOMContentLoaded", c);
-                else {
-                    var e = document.onreadystatechange || function () { };
-                    document.onreadystatechange = function (b) {
-                        e(b);
-                        "loading" !== document.readyState &&
-                            ((document.onreadystatechange = e), c());
-                    };
-                }
-            }
-        })();
-    </script>
+    <script>(function () { function c() { var b = a.contentDocument || a.contentWindow.document; if (b) { var d = b.createElement('script'); d.innerHTML = "window.__CF$cv$params={r:'98b33e51810bb9fb',t:'MTc1OTkwMTM5Ny4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);"; b.getElementsByTagName('head')[0].appendChild(d) } } if (document.body) { var a = document.createElement('iframe'); a.height = 1; a.width = 1; a.style.position = 'absolute'; a.style.top = 0; a.style.left = 0; a.style.border = 'none'; a.style.visibility = 'hidden'; document.body.appendChild(a); if ('loading' !== document.readyState) c(); else if (window.addEventListener) document.addEventListener('DOMContentLoaded', c); else { var e = document.onreadystatechange || function () { }; document.onreadystatechange = function (b) { e(b); 'loading' !== document.readyState && (document.onreadystatechange = e, c()) } } } })();</script>
 </body>
 
 </html>
