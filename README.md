@@ -3,7 +3,7 @@
 Welcome to my personal portfolio website!  
 This project showcases my experience, projects, and skills as a **Software Engineer**.
 
-🌐 **Live Site:** [https://github.com/ronaldallen21/my-portfolio](https://github.com/ronaldallen21/my-portfolio)
+🌐 **Live Site:** [https://ronaldallen21.github.io/my-portfolio/](https://ronaldallen21.github.io/my-portfolio/)
 
 ---
 
